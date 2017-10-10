@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8" />
 	<title>Mdic's Classic BoardGame</title>
 	<link type="text/css" rel="stylesheet" href="base.css">
-	<!-- ¸ðµç htmlÀº base.css¸¦ ÀüÁ¦·Î µÎ°í ÀÖ½À´Ï´Ù.-->
+	<!-- ëª¨ë“  htmlì€ base.cssë¥¼ ì „ì œë¡œ ë‘ê³  ìžˆìŠµë‹ˆë‹¤.-->
 
 	<link type="text/css" rel="stylesheet" href="rule.css">
 	
@@ -11,14 +12,14 @@
 <body>
 <div id="backbox"></div>
 </a id="top">
-<!-- "Top"¹öÆ°À» ÀÌ¿ëÇÏ¿© ¸Ç À§·Î jumpÇÏ±âÀ§ÇÑ idÀÔ´Ï´Ù.-->
+<!-- "Top"ë²„íŠ¼ì„ ì´ìš©í•˜ì—¬ ë§¨ ìœ„ë¡œ jumpí•˜ê¸°ìœ„í•œ idìž…ë‹ˆë‹¤.-->
 
 <audio id="backmusic" src="backmusic.mp3"" controls loop>
 Your browser does not support the audio element.
 </audio>
-<!-- background musicÀÔ´Ï´Ù. BGMÀ¸·Î´Â
-PLvsAA OST - 1-13 - Barroom À» »ç¿ëÇÏ¿´À¸¸ç,
-"https://youtu.be/Mg1M5_V5v_8"¿¡¼­ °¡Á®¿Ô½À´Ï´Ù.-->
+<!-- background musicìž…ë‹ˆë‹¤. BGMìœ¼ë¡œëŠ”
+PLvsAA OST - 1-13 - Barroom ì„ ì‚¬ìš©í•˜ì˜€ìœ¼ë©°,
+"https://youtu.be/Mg1M5_V5v_8"ì—ì„œ ê°€ì ¸ì™”ìŠµë‹ˆë‹¤.-->
 
 
 <header>
@@ -27,319 +28,319 @@ PLvsAA OST - 1-13 - Barroom À» »ç¿ëÇÏ¿´À¸¸ç,
 
 <div id="menubar">
 	<ul class="menu">
-		<li><a href="intro.html">¸¶ÀÛ¼Ò°³</a></li>
-		<li><a href="rule.html" id="here">±ÔÄ¢</a></li>
-		<li><a href="history.html">ÆÐº¸</a></li>
-		<li><a href="link.html">¸µÅ©</a></li>
+		<li><a href="intro.html">ë§ˆìž‘ì†Œê°œ</a></li>
+		<li><a href="rule.html" id="here">ê·œì¹™</a></li>
+		<li><a href="history.html">íŒ¨ë³´</a></li>
+		<li><a href="link.html">ë§í¬</a></li>
 	</ul>
 </div>
 </header>
 
-<!-- ¸Þ´º¹ÙÀÔ´Ï´Ù. -->
+<!-- ë©”ë‰´ë°”ìž…ë‹ˆë‹¤. -->
 
-<!-- ÄÁÅÙÃ÷ ½ÃÀÛÀÔ´Ï´Ù. -->
+<!-- ì»¨í…ì¸  ì‹œìž‘ìž…ë‹ˆë‹¤. -->
 
 <div id="goto">
 goto...
 	<ul class="menu">
-		<li><a href="#kinds">¸¶ÀÛÆÐÁ¾·ù</a></li>
-		<li><a href="#make">Á¶ÆÐ</a></li>
-		<li><a href="#cry">ÈÄ·Î</a></li>
-		<li><a href="#rank">¿ª</a></li>
-		<li><a href="#add">ºÎ¼ö</a></li>
-		<li><a href="#cal">Á¡¼ö°è»ê¹ý</a></li>
+		<li><a href="#kinds">ë§ˆìž‘íŒ¨ì¢…ë¥˜</a></li>
+		<li><a href="#make">ì¡°íŒ¨</a></li>
+		<li><a href="#cry">í›„ë¡œ</a></li>
+		<li><a href="#rank">ì—­</a></li>
+		<li><a href="#add">ë¶€ìˆ˜</a></li>
+		<li><a href="#cal">ì ìˆ˜ê³„ì‚°ë²•</a></li>
 			
 	</ul>
 </div>
 
 <pre class="explain">
-Áö±Ý ¼³¸íÇÏ´Â ·êÀº ÀÏº»¸¶ÀÛÀÎ <strong>'¸®Ä¡¸¶ÀÛ'</strong>À» ±âÁØÀ¸·Î ÇÏ°í ÀÖ½À´Ï´Ù.
+ì§€ê¸ˆ ì„¤ëª…í•˜ëŠ” ë£°ì€ ì¼ë³¸ë§ˆìž‘ì¸ <strong>'ë¦¬ì¹˜ë§ˆìž‘'</strong>ì„ ê¸°ì¤€ìœ¼ë¡œ í•˜ê³  ìžˆìŠµë‹ˆë‹¤.
 </pre>
 
-<div id="#kinds" class="topic">&lt;¸¶ÀÛÆÐ Á¾·ù&gt;</div>
+<div id="#kinds" class="topic">&lt;ë§ˆìž‘íŒ¨ ì¢…ë¥˜&gt;</div>
 
-<img src="kinds.jpg" alt="¸¶ÀÛÆÐÁ¾·ù">
+<img src="kinds.jpg" alt="ë§ˆìž‘íŒ¨ì¢…ë¥˜">
 
 <pre class="explain">
-¸¶ÀÛÆÐ´Â À§¿Í °°ÀÌ ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.
+ë§ˆìž‘íŒ¨ëŠ” ìœ„ì™€ ê°™ì´ ì´ë£¨ì–´ì ¸ ìžˆìŠµë‹ˆë‹¤.
 
-Ã¹ÁÙ¿¡ ¼ýÀÚ°¡ ÇÑÀÚ·Î ½áÁ®ÀÖ´Â »¡°£ ÆÐµéÀÌ <strong>'¸¸¼öÆÐ'</strong> ÀÔ´Ï´Ù.
-1ºÎÅÍ 9±îÁö ÀÖÀ¸¸ç °¢ ÆÐ¸¶´Ù 4°³¾¿ µé¾îÀÖ½À´Ï´Ù. (ÃÑ 36°³)
+ì²«ì¤„ì— ìˆ«ìžê°€ í•œìžë¡œ ì¨ì ¸ìžˆëŠ” ë¹¨ê°„ íŒ¨ë“¤ì´ <strong>'ë§Œìˆ˜íŒ¨'</strong> ìž…ë‹ˆë‹¤.
+1ë¶€í„° 9ê¹Œì§€ ìžˆìœ¼ë©° ê° íŒ¨ë§ˆë‹¤ 4ê°œì”© ë“¤ì–´ìžˆìŠµë‹ˆë‹¤. (ì´ 36ê°œ)
 
-µÑÂ°ÁÙ¿¡ ÆÄ¶õ µ¿±×¶ó¹Ì°¡ ±×·ÁÁø ÆÐµéÀÌ <strong>'Åë¼öÆÐ'</strong> ÀÔ´Ï´Ù.
-Åë¼öÆÐ ¶ÇÇÑ 1ºÎÅÍ 9±îÁö ÀÖÀ¸¸ç °¢ ÆÐ¸¶´Ù 4°³¾¿ µé¾îÀÖ½À´Ï´Ù. (ÃÑ 36°³)
+ë‘˜ì§¸ì¤„ì— íŒŒëž€ ë™ê·¸ë¼ë¯¸ê°€ ê·¸ë ¤ì§„ íŒ¨ë“¤ì´ <strong>'í†µìˆ˜íŒ¨'</strong> ìž…ë‹ˆë‹¤.
+í†µìˆ˜íŒ¨ ë˜í•œ 1ë¶€í„° 9ê¹Œì§€ ìžˆìœ¼ë©° ê° íŒ¨ë§ˆë‹¤ 4ê°œì”© ë“¤ì–´ìžˆìŠµë‹ˆë‹¤. (ì´ 36ê°œ)
 
-¼ÂÂ°ÁÙ¿¡ ÃÊ·Ï ´ë³ª¹«µé·Î ÀÌ·ç¾îÁø ÆÐµéÀÌ <strong>'»è¼öÆÐ'</strong> ÀÔ´Ï´Ù.
-»è¼öÆÐ ¿ª½Ã 1ºÎÅÍ 9±îÁö ÀÖÀ¸¸ç °¢ ÆÐ¸¶´Ù 4°³¾¿ µé¾îÀÖ½À´Ï´Ù. (ÃÑ 36°³)
+ì…‹ì§¸ì¤„ì— ì´ˆë¡ ëŒ€ë‚˜ë¬´ë“¤ë¡œ ì´ë£¨ì–´ì§„ íŒ¨ë“¤ì´ <strong>'ì‚­ìˆ˜íŒ¨'</strong> ìž…ë‹ˆë‹¤.
+ì‚­ìˆ˜íŒ¨ ì—­ì‹œ 1ë¶€í„° 9ê¹Œì§€ ìžˆìœ¼ë©° ê° íŒ¨ë§ˆë‹¤ 4ê°œì”© ë“¤ì–´ìžˆìŠµë‹ˆë‹¤. (ì´ 36ê°œ)
 
-¼ýÀÚµéÀ» ÀÇ¹ÌÇÏ´Â ¸¸¼öÆÐ, Åë¼öÆÐ, »è¼öÆÐ. ÀÌµéÀ» ÅëÆ²¾î¼­ <strong>'¼öÆÐ'</strong>¶ó°í ÇÕ´Ï´Ù.(ÃÑ 108°³)
+ìˆ«ìžë“¤ì„ ì˜ë¯¸í•˜ëŠ” ë§Œìˆ˜íŒ¨, í†µìˆ˜íŒ¨, ì‚­ìˆ˜íŒ¨. ì´ë“¤ì„ í†µí‹€ì–´ì„œ <strong>'ìˆ˜íŒ¨'</strong>ë¼ê³  í•©ë‹ˆë‹¤.(ì´ 108ê°œ)
 
-³ÝÂ°ÁÙ¿¡´Â ±ÛÀÚÆÐµéÀÌ¶ó ÇÏ¿© <strong>'ÀÚÆÐ'</strong> ¶ó°í ÇÕ´Ï´Ù.
-ÀÚÆÐ´Â µ¿¼­³²ºÏ 4¹æÀ§¸¦ ³ªÅ¸³»´Â <strong>'Ç³ÆÐ'</strong>¿Í(¹Ù¶÷ÆÐ¶ó°íµµ ÇÕ´Ï´Ù.)
-³ª¸ÓÁö ¹é¹ßÁßÀ» ³ªÅ¸³»´Â <strong>'»ï¿øÆÐ'</strong>·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.
-ÃÑ 7°¡Áö Á¾·ù°¡ ÀÖÀ¸¸ç, °¢ Á¾·ù¸¶´Ù 4°³¾¿ ÃÑ 28°³°¡ ÀÖ½À´Ï´Ù.
+ë„·ì§¸ì¤„ì—ëŠ” ê¸€ìžíŒ¨ë“¤ì´ë¼ í•˜ì—¬ <strong>'ìžíŒ¨'</strong> ë¼ê³  í•©ë‹ˆë‹¤.
+ìžíŒ¨ëŠ” ë™ì„œë‚¨ë¶ 4ë°©ìœ„ë¥¼ ë‚˜íƒ€ë‚´ëŠ” <strong>'í’íŒ¨'</strong>ì™€(ë°”ëžŒíŒ¨ë¼ê³ ë„ í•©ë‹ˆë‹¤.)
+ë‚˜ë¨¸ì§€ ë°±ë°œì¤‘ì„ ë‚˜íƒ€ë‚´ëŠ” <strong>'ì‚¼ì›íŒ¨'</strong>ë¡œ ì´ë£¨ì–´ì ¸ ìžˆìŠµë‹ˆë‹¤.
+ì´ 7ê°€ì§€ ì¢…ë¥˜ê°€ ìžˆìœ¼ë©°, ê° ì¢…ë¥˜ë§ˆë‹¤ 4ê°œì”© ì´ 28ê°œê°€ ìžˆìŠµë‹ˆë‹¤.
 
-Áï...
+ì¦‰...
 <strong>
-¸¶ÀÛÆÐ = ¼öÆÐ + ÀÚÆÐ
-¼öÆÐ = ¸¸¼öÆÐ + Åë¼öÆÐ + »è¼öÆÐ
-ÀÚÆÐ = Ç³ÆÐ + »ï¿øÆÐ
+ë§ˆìž‘íŒ¨ = ìˆ˜íŒ¨ + ìžíŒ¨
+ìˆ˜íŒ¨ = ë§Œìˆ˜íŒ¨ + í†µìˆ˜íŒ¨ + ì‚­ìˆ˜íŒ¨
+ìžíŒ¨ = í’íŒ¨ + ì‚¼ì›íŒ¨
 </strong>
-¶ó°í Á¤¸®ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ë¼ê³  ì •ë¦¬í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-Âü°í) 5¹øÂ°ÁÙÀÇ »¡°£ 5µéÀº '¾ÆÄ«µµ¶ó'¶ó°í ÇÏ¿©, ³ÖÀ»¶§µµ ÀÖ°í ¾È³ÖÀ» ¶§µµ ÀÖ½À´Ï´Ù.
-³Ö°ÔµÅ¸é º¸Åë 5¸¦ ÇÏ³ª »©°í »¡°£ 5¸¦ Áý¾î³Ö½À´Ï´Ù.
-±× ¿À¸¥ÂÊ¿¡ ²É¸ð¾çÆÐ 4°³´Â È­ÆÐ¶ó°í ÇÏ³ª, ¸®Ä¡¸¶ÀÛ¿¡¼± »ç¿ëÇÏÁö ¾Ê½À´Ï´Ù.
+ì°¸ê³ ) 5ë²ˆì§¸ì¤„ì˜ ë¹¨ê°„ 5ë“¤ì€ 'ì•„ì¹´ë„ë¼'ë¼ê³  í•˜ì—¬, ë„£ì„ë•Œë„ ìžˆê³  ì•ˆë„£ì„ ë•Œë„ ìžˆìŠµë‹ˆë‹¤.
+ë„£ê²Œë¼ë©´ ë³´í†µ 5ë¥¼ í•˜ë‚˜ ë¹¼ê³  ë¹¨ê°„ 5ë¥¼ ì§‘ì–´ë„£ìŠµë‹ˆë‹¤.
+ê·¸ ì˜¤ë¥¸ìª½ì— ê½ƒëª¨ì–‘íŒ¨ 4ê°œëŠ” í™”íŒ¨ë¼ê³  í•˜ë‚˜, ë¦¬ì¹˜ë§ˆìž‘ì—ì„  ì‚¬ìš©í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
 
-
-
-</pre>
-
-<div id="#make" class="topic">&lt;Á¶ÆÐ&gt;</div>
-
-<pre class="explain">
-¸¶ÀÛÀ» Ã³À½ ½ÃÀÛÇÒ ¶§ ÆÐ¸¦ <strong>13°³</strong>¸¦ °¡Áö°í ½ÃÀÛÇÕ´Ï´Ù.
-
-ÀÚ½ÅÀÇ Â÷·Ê°¡ µÆÀ» ¶§ ÆÐ ÇÑ°³¸¦ °¡Á®¿É´Ï´Ù. ÀÌ·Î½á ÆÐ°¡ 14°³°¡ ‰Ï´Ï´Ù.
-
-ÇÏÁö¸¸ ÆÐÀÇ °¹¼ö¸¦ ´Ù½Ã ¸ÂÃß±â À§ÇØ ºÒÇÊ¿äÇÑ ÆÐ¸¦ 1°³ ¹ö¸®°í 13°³¸¦ ¸ÂÃä´Ï´Ù.
-
-ÀÌ·¯ÇÑ »óÈ²À» ¹Ýº¹ÇÏ¿©, <strong>"¸öÅë 4°³¿¡ ¸Ó¸® 1°³"</strong>¸¦ ¸¸µé¸é ÀÌ±â´Â °ÔÀÓÀÔ´Ï´Ù.
-
-
-<strong>¸öÅë</strong>Àº <strong>šœÃ÷</strong> È¤Àº <strong>Ä¿Âê</strong>·Î ¸¸µé¾îÁý´Ï´Ù.
-
-<strong>šœÃ÷</strong>´Â ¿¬¼ÓµÈ ¼ýÀÚ 3°³ÀÇ ÆÐ¸¦ ÀÇ¹ÌÇÕ´Ï´Ù. ´ÙÀ½°ú °°½À´Ï´Ù.
-</pre>
-
-<img src="run.png" alt="šœÃ÷ ¿Ã¹Ù¸¥ ¿¹½Ã">
-
-<pre class="explain">
-ÀÌ¿Í°°ÀÌ ¿¬¼ÓµÈ ¼ýÀÚ 3°³¸é šœÃ÷¸¦ ¸¸Á·ÇÕ´Ï´Ù. ÇÏÁö¸¸ ¹ØÀÇ ¿¹½Ã´Â šœÃ÷°¡ ¾Æ´Õ´Ï´Ù.
-</pre>
-
-<img src="xrun.png" alt="šœÃ÷ ¿ÇÁö¾ÊÀº ¿¹½Ã">
-
-<pre class="explain">
-9¿Í 1Àº ¿¬°áµÇÁö ¾Ê½À´Ï´Ù. 891Àº šœÃ÷·Î ÀÎÁ¤ÇÏÁö ¾Ê½À´Ï´Ù.
-
-147ÀÌ³ª 468Ã³·³ 2~3Ä­ ÀÏÁ¤ÇÑ °£°ÝÀ¸·Î ¶³¾îÁ®ÀÖ´Ù°í ÇØ¼­ šœÃ÷¶ó°í ÀÎÁ¤ÇÏÁö ¾Ê½À´Ï´Ù.
-
-Ç³ÆÐ¼ø¼­, È¤Àº »ï¿øÆÐ ¼ø¼­¿¡ µû¶ó µ¿³²¼­¸¦ ³ª¿­ÇÑ´Ù°í ÇØµµ šœÃ÷¶ó ÇÏÁö ¾Ê½À´Ï´Ù.
-
-¾Ö´çÃÊ ÀÚÆÐ·Î´Â šœÃ÷¸¦ ¸¸µé ¼ö ¾ø½À´Ï´Ù.
-
-¸Ç ¸¶Áö¸· ±×¸²Ã³·³ ¿©·¯ Á¾·ùÀÇ ¼öÆÐ¸¦ ¼¯À¸¸é ¾È‰Ï´Ï´Ù.
-
-
-<strong>Ä¿Âê</strong>´Â ¶È°°Àº ÆÐ 3°³(È¤Àº 4°³)¸¦ ¸¸µé¸é ¸¸Á·ÇÕ´Ï´Ù.
-</pre>
-
-<img src="set.png" alt="Ä¿Âê ¿Ã¹Ù¸¥ ¿¹½Ã">
-
-<pre class="explain">
-¸Ç ¹ØÀÇ 3Åë 4°³ÀÇ °æ¿ì '±øÁî'¶ó°í ºÎ¸£´Âµ¥, ÀÏ´ÜÀº Ä¿Âê¿Í °°´Ù°í »ý°¢ÇÏ¼Åµµ ¹«¹æÇÕ´Ï´Ù.
-
-
-<strong>¸Ó¸®</strong>´Â Ä¿Âê¿Í ºñ½ÁÇÏ°Ô ¶È°°Àº ÆÐ 2°³¸¦ ¸¸µé¸é ¸¸Á·ÇÕ´Ï´Ù.
-
-
-±×·¡¼­ <strong>¸öÅë 4°³¿Í ¸Ó¸® ÇÏ³ª</strong>¸¦ ¸¸µé¾î °¡¸é ‰Ï´Ï´Ù. ¿¹½Ã·Î ´ÙÀ½°ú °°Àº ÆÐ°¡ ÀÖ½À´Ï´Ù.
-</pre>
-
-<img src="win.png" alt="¿Ï¼ºÆÐ">
-
-<pre class="explain">
-À§¿Í °°Àº ÇüÅÂ¸¦ ¸¸µé¸é <strong>'È­·á'</strong> Çß´Ù°í ÇÏ¸ç ÇØ´ç ÆÇÀ» ÀÌ±â°Ô ‰Ï´Ï´Ù.
 
 
 </pre>
 
-<div id="#cry" class="topic">&lt;ÈÄ·Î&gt;</div>
+<div id="#make" class="topic">&lt;ì¡°íŒ¨&gt;</div>
 
 <pre class="explain">
-¸¶ÀÛÀº ÆÐ¸¦ ¼­·Î ÇÑ¹ø¾¿ ½Ã°è¹æÇâÀ¸·Î ÇÑÀå °¡Á®¿À°í ¹ö¸®¸é¼­ ÁøÇàÇÕ´Ï´Ù.
+ë§ˆìž‘ì„ ì²˜ìŒ ì‹œìž‘í•  ë•Œ íŒ¨ë¥¼ <strong>13ê°œ</strong>ë¥¼ ê°€ì§€ê³  ì‹œìž‘í•©ë‹ˆë‹¤.
 
-ÀÌ¶§ <strong>ÀÚ½Å¿¡°Ô ÇÊ¿äÇØ º¸ÀÌ´Â ÆÐ¸¦ »ó´ë¹æÀÌ ¹ö·ÈÀ»¶§, ÀÌ¸¦ °¡Á®¿À´Â ÇàÀ§</strong>¸¦ <strong>'ÈÄ·Î'</strong>¶ó°í ÇÕ´Ï´Ù.
+ìžì‹ ì˜ ì°¨ë¡€ê°€ ëì„ ë•Œ íŒ¨ í•œê°œë¥¼ ê°€ì ¸ì˜µë‹ˆë‹¤. ì´ë¡œì¨ íŒ¨ê°€ 14ê°œê°€ Â‰æ±‚æ±‚.
 
-¹°·Ð ¸¶±¸ÀâÀÌ·Î °¡Á®¿Ã ¼ö ¾ø°í, Æ¯Á¤ ±ÔÄ¢¿¡ µû¶ó¼­¸¸ °¡Á®¿Ã ¼ö ÀÖ½À´Ï´Ù.
+í•˜ì§€ë§Œ íŒ¨ì˜ ê°¯ìˆ˜ë¥¼ ë‹¤ì‹œ ë§žì¶”ê¸° ìœ„í•´ ë¶ˆí•„ìš”í•œ íŒ¨ë¥¼ 1ê°œ ë²„ë¦¬ê³  13ê°œë¥¼ ë§žì¶¥ë‹ˆë‹¤.
 
-
-<strong>'ÈÄ·Î'</strong>¿¡´Â <strong>'Ä¡'</strong>, <strong>'Æþ'</strong>, <strong>'±ø'</strong>ÀÌ ÀÖ½À´Ï´Ù.
-
-
-<strong>'Ä¡'</strong>´Â ³» ¿ÞÂÊ»ç¶÷(»ó°¡)ÀÌ šœÃ÷¸¦ ¿Ï¼º½ÃÅ³ ¼ö ÀÖ´Â ÆÐ¸¦ ³ÂÀ» ¶§ <strong>'Ä¡'</strong>¶ó°í ¹ß¼ºÇÏ°í °¡Á®¿Ã ¼ö ÀÖ½À´Ï´Ù.
-
-¹ß¼º ÈÄ, šœÃ÷¸¦ ¿Ï¼º½ÃÅ³ ³ª¸ÓÁö ÆÐ 2°³¸¦ ÀÚ½ÅÀÇ ¼Õ¿¡¼­ °ø°³ÇÑ µÚ,
-
-»ó°¡°¡ ¹ö¸° ÆÐ ÇÑ°³¸¦ °¡Á®¿Í ÀÚ½ÅÀÇ ¿ìÃøÀ¸·Î µû·Î »©µÓ´Ï´Ù.
-
-±×¸®°í ÀÚ½ÅÀÇ ÆÐ Áß 1°³¸¦ ¹ö¸®¸é ‰Ï´Ï´Ù.
+ì´ëŸ¬í•œ ìƒí™©ì„ ë°˜ë³µí•˜ì—¬, <strong>"ëª¸í†µ 4ê°œì— ë¨¸ë¦¬ 1ê°œ"</strong>ë¥¼ ë§Œë“¤ë©´ ì´ê¸°ëŠ” ê²Œìž„ìž…ë‹ˆë‹¤.
 
 
-¿¹¸¦µé¾î, ÀÚ½ÅÀÌ 2,4»èÀ» °¡Áö°í ÀÖ´Âµ¥ »ó°¡°¡ 3»èÀ» ³ÂÀ¸¸é...
+<strong>ëª¸í†µ</strong>ì€ <strong>ÂšÂœì¸ </strong> í˜¹ì€ <strong>ì»¤ì¯”</strong>ë¡œ ë§Œë“¤ì–´ì§‘ë‹ˆë‹¤.
+
+<strong>ÂšÂœì¸ </strong>ëŠ” ì—°ì†ëœ ìˆ«ìž 3ê°œì˜ íŒ¨ë¥¼ ì˜ë¯¸í•©ë‹ˆë‹¤. ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤.
 </pre>
 
-<img src="chii.png" alt="Ä¡">
+<img src="run.png" alt="ÂšÂœì¸  ì˜¬ë°”ë¥¸ ì˜ˆì‹œ">
 
 <pre class="explain">
-'Ä¡' ¹ß¼º ÈÄ ´ÙÀ½°ú °°ÀÌ ¿ìÃø¿¡ °ø°³ÇÏ¸é ‰Ï´Ï´Ù.
-
-¹Þ¾Æ°£ ÆÐ(3»è)¸¦ ¹Þ¾Æ°£ ÂÊ ¹æÇâ(¿ÞÂÊ)À¸·Î ´¯Çô¼­ Ç¥½ÃÇØ¾ß ÇÕ´Ï´Ù. 
-
-
-<strong>'Æþ'</strong>Àº ¾Æ¹«³ª Ä¿Âê¸¦ ¿Ï¼º½ÃÅ³ ¼ö ÀÖ´Â ÆÐ¸¦ ³ÂÀ» ¶§ <strong>'Æþ'</strong>¶ó°í ¹ß¼ºÇÏ°í °¡Á®¿Ã ¼ö ÀÖ½À´Ï´Ù.
-
-Ä¡¿Í ¸¶Âù°¡Áö·Î ¹ß¼º ÈÄ ÆÐ 2°³¸¦ °ø°³, ¿ìÃø¿¡ µû·Î»©°í Å¸ÆÐÇÏ¸é ‰Ï´Ï´Ù.
-
-¿¹¸¦µé¾î, ¹ß(Û¡) 2ÀåÀ» µé°í ÀÖ´Âµ¥ ¸ÂÀºÆí »ç¶÷(´ë°¡)ÀÌ ¹ßÀ» ³ÂÀ» ¶§
-
-'Æþ'ÀÌ¶ó°í ¹ß¼º ÈÄ ÆÐ¸¦ ´ÙÀ½°ú °°ÀÌ ³õ°í Å¸ÆÐÇÏ½Ã¸é ‰Ï´Ï´Ù.
+ì´ì™€ê°™ì´ ì—°ì†ëœ ìˆ«ìž 3ê°œë©´ ÂšÂœì¸ ë¥¼ ë§Œì¡±í•©ë‹ˆë‹¤. í•˜ì§€ë§Œ ë°‘ì˜ ì˜ˆì‹œëŠ” ÂšÂœì¸ ê°€ ì•„ë‹™ë‹ˆë‹¤.
 </pre>
 
-<img src="pong.png" alt="Æþ">
+<img src="xrun.png" alt="ÂšÂœì¸  ì˜³ì§€ì•Šì€ ì˜ˆì‹œ">
 
 <pre class="explain">
+9ì™€ 1ì€ ì—°ê²°ë˜ì§€ ì•ŠìŠµë‹ˆë‹¤. 891ì€ ÂšÂœì¸ ë¡œ ì¸ì •í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
 
-<strong>'±ø'</strong>Àº À§¿¡¼­ Àá±ñ '±øÁî'¿¡ ´ëÇØ ¼³¸íÇß¾ú´Âµ¥, ÀÌ¸¦ ¸¸µé±â À§ÇÑ ¹ß¼ºÀÔ´Ï´Ù.
+147ì´ë‚˜ 468ì²˜ëŸ¼ 2~3ì¹¸ ì¼ì •í•œ ê°„ê²©ìœ¼ë¡œ ë–¨ì–´ì ¸ìžˆë‹¤ê³  í•´ì„œ ÂšÂœì¸ ë¼ê³  ì¸ì •í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
 
-±ø¿¡´Â <strong>'¾Ï±ø'</strong>, <strong>'°¡±ø'</strong>, <strong>'¹Ö±ø'</strong> 3Á¾·ù°¡ ÀÖ½À´Ï´Ù.
+í’íŒ¨ìˆœì„œ, í˜¹ì€ ì‚¼ì›íŒ¨ ìˆœì„œì— ë”°ë¼ ë™ë‚¨ì„œë¥¼ ë‚˜ì—´í•œë‹¤ê³  í•´ë„ ÂšÂœì¸ ë¼ í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
+
+ì• ë‹¹ì´ˆ ìžíŒ¨ë¡œëŠ” ÂšÂœì¸ ë¥¼ ë§Œë“¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.
+
+ë§¨ ë§ˆì§€ë§‰ ê·¸ë¦¼ì²˜ëŸ¼ ì—¬ëŸ¬ ì¢…ë¥˜ì˜ ìˆ˜íŒ¨ë¥¼ ì„žìœ¼ë©´ ì•ˆÂ‰æ±‚æ±‚.
 
 
-<strong>'¾Ï±ø'</strong>Àº ÀÚ½ÅÀÇ Â÷·Ê¶§ <strong>°°Àº ÆÐ 4°³¸¦ °ø°³</strong>ÇÏ¸é¼­ '±ø'À» ¼±¾ðÇÕ´Ï´Ù.
-
-±×¸®°í ¿ìÃø¿¡ ´ÙÀ½°ú °°ÀÌ ³õ½À´Ï´Ù.
+<strong>ì»¤ì¯”</strong>ëŠ” ë˜‘ê°™ì€ íŒ¨ 3ê°œ(í˜¹ì€ 4ê°œ)ë¥¼ ë§Œë“¤ë©´ ë§Œì¡±í•©ë‹ˆë‹¤.
 </pre>
 
-<img src="blindkang.png" alt="¾Ï±ø">
+<img src="set.png" alt="ì»¤ì¯” ì˜¬ë°”ë¥¸ ì˜ˆì‹œ">
 
 <pre class="explain">
-<strong>'°¡±ø'</strong>Àº ÀÚ½ÅÀÇ Â÷·Ê¶§ <strong>ÀÚ½ÅÀÇ ¼ÕÆÐ¿¡ ÀÌ¹Ì Æþ ÇØ³õÀº ÆÐÀÇ ¸¶Áö¸· ÇÑÀåÀÌ ´õ ÀÖÀ» ¶§</strong> ÇÏ´Â '±ø'ÀÔ´Ï´Ù.
+ë§¨ ë°‘ì˜ 3í†µ 4ê°œì˜ ê²½ìš° 'ê¹¡ì¦ˆ'ë¼ê³  ë¶€ë¥´ëŠ”ë°, ì¼ë‹¨ì€ ì»¤ì¯”ì™€ ê°™ë‹¤ê³  ìƒê°í•˜ì…”ë„ ë¬´ë°©í•©ë‹ˆë‹¤.
 
-¹ß¼º ÈÄ, ´¯Çô³õÀº ÆÐ À§¿¡ ´ÙÀ½°ú °°ÀÌ °ãÃÄ³õÀ¸½Ã¸é ‰Ï´Ï´Ù.
+
+<strong>ë¨¸ë¦¬</strong>ëŠ” ì»¤ì¯”ì™€ ë¹„ìŠ·í•˜ê²Œ ë˜‘ê°™ì€ íŒ¨ 2ê°œë¥¼ ë§Œë“¤ë©´ ë§Œì¡±í•©ë‹ˆë‹¤.
+
+
+ê·¸ëž˜ì„œ <strong>ëª¸í†µ 4ê°œì™€ ë¨¸ë¦¬ í•˜ë‚˜</strong>ë¥¼ ë§Œë“¤ì–´ ê°€ë©´ Â‰æ±‚æ±‚. ì˜ˆì‹œë¡œ ë‹¤ìŒê³¼ ê°™ì€ íŒ¨ê°€ ìžˆìŠµë‹ˆë‹¤.
 </pre>
 
-<img src="addkang.png" alt="°¡±ø">
+<img src="win.png" alt="ì™„ì„±íŒ¨">
 
 <pre class="explain">
+ìœ„ì™€ ê°™ì€ í˜•íƒœë¥¼ ë§Œë“¤ë©´ <strong>'í™”ë£Œ'</strong> í–ˆë‹¤ê³  í•˜ë©° í•´ë‹¹ íŒì„ ì´ê¸°ê²Œ Â‰æ±‚æ±‚.
 
-<strong>'¹Ö±ø'</strong>(´ë¸í±øÀÌ¶ó°íµµ ÇÕ´Ï´Ù)Àº Ä¿Âê(°°Àº ÆÐ 3Àå)À» µé°í ÀÖ´Â »óÅÂ¿¡¼­
-
-<strong>»ó´ë¹æÀÌ ÀÚ½ÅÀÇ '±øÁî'¸¦ ¿Ï¼º½ÃÅ³ ¼ö ÀÖ´Â ¸¶Áö¸· ÆÐ ÇÑÀåÀ» ³ÂÀ» ¶§</strong> ÇÏ´Â '±ø'ÀÔ´Ï´Ù.
-
-´ÙÀ½°ú°°ÀÌ °¡Á®¿Â ÂÊÀ¸·Î ´¯Çô¼­ Ç¥½ÃÇÏ½Ã¸é ‰Ï´Ï´Ù.
-</pre>
-
-<img src="mingkang.png" alt="¹Ö±ø">
-
-
-<pre class="explain">
-ÀÌ¶§, ¿ø·¡ ¸öÅëÀÇ °¹¼ö´Â 3°³ÀÎµ¥, <strong>±øÀ» ÇÒ °æ¿ì 4°³°¡ µÅ¾î ÆÐ°¡ ÇÏ³ª ¸ðÀÚ¸£°Ô ‰Ï´Ï´Ù.</strong>
-
-±×·¡¼­ ±øÀ» ÇÑ ÈÄ¿¡, <strong>¿µ»ó¿¡¼­ º¸ÃæÆÐ¸¦ ÇÏ³ª °¡Á®¿É´Ï´Ù.</strong> ±×ÈÄ ÆÐ ÇÏ³ª¸¦ ¹ö¸®½Ã¸é ‰Ï´Ï´Ù.
 
 </pre>
 
-<div id="#rank" class="topic">&lt;¿ª&gt;</div>
+<div id="#cry" class="topic">&lt;í›„ë¡œ&gt;</div>
 
 <pre class="explain">
-¸¶ÀÛ¿¡´Â <strong>'¿ª'</strong>ÀÌ¶õ°Ô Á¸ÀçÇÕ´Ï´Ù.
+ë§ˆìž‘ì€ íŒ¨ë¥¼ ì„œë¡œ í•œë²ˆì”© ì‹œê³„ë°©í–¥ìœ¼ë¡œ í•œìž¥ ê°€ì ¸ì˜¤ê³  ë²„ë¦¬ë©´ì„œ ì§„í–‰í•©ë‹ˆë‹¤.
 
-<strong>'¿ª'Àº ÀÚ½ÅÀÇ ¿Ï¼ºÆÐ°¡ ¾ó¸¶³ª °ª¾îÄ¡°¡ ÀÖ´ÂÁö ±âÁØÁ¡ ¿ªÇÒÀ» ÇÕ´Ï´Ù.</strong>
+ì´ë•Œ <strong>ìžì‹ ì—ê²Œ í•„ìš”í•´ ë³´ì´ëŠ” íŒ¨ë¥¼ ìƒëŒ€ë°©ì´ ë²„ë ¸ì„ë•Œ, ì´ë¥¼ ê°€ì ¸ì˜¤ëŠ” í–‰ìœ„</strong>ë¥¼ <strong>'í›„ë¡œ'</strong>ë¼ê³  í•©ë‹ˆë‹¤.
 
-¿ªÀÌ ¸¹À¸¸é ¸¹À»¼ö·Ï ¹ÞÀ» Á¡¼ö´Â ¿Ã¶ó°¥ °ÍÀÌ¸ç, º°·Î ¾øÀ¸¸é ±×¸¸Å­ ÀûÀº Á¡¼ö¹Û¿¡ ¹ÞÁö ¸øÇÕ´Ï´Ù.
-
-±×¸®°í, ¿Ï¼º ÇüÅÂ¸¦ ¸¸µé¾ú´Ù°í ÇØ¼­ <strong>'¿ª'ÀÌ ¾øÀ¸¸é 'È­·á'¸¦ ÇÒ ¼ö ¾ø½À´Ï´Ù.</strong>
-
-±×¸¸Å­ '¿ª'ÀÌ Áß¿äÇÑ °ÍÀÌ´Ï ¸¹±ä ÇÏ´õ¶óµµ ²À ¿Ü¿öµÖ¾ß ÇÒ »çÇ×ÀÔ´Ï´Ù.
+ë¬¼ë¡  ë§ˆêµ¬ìž¡ì´ë¡œ ê°€ì ¸ì˜¬ ìˆ˜ ì—†ê³ , íŠ¹ì • ê·œì¹™ì— ë”°ë¼ì„œë§Œ ê°€ì ¸ì˜¬ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
 
-¸¶ÀÛ ¿ªÀº »ó´çÈ÷ ¸¹Àº ÆíÀÌ´Ï ¸µÅ©¸¸ °É°í ³Ñ¾î°¡°Ú½À´Ï´Ù.
-<a href="https://namu.wiki/w/%EB%A7%88%EC%9E%91%EC%9D%98%20%EC%97%AD">¸µÅ©(¿ª)</a>
+<strong>'í›„ë¡œ'</strong>ì—ëŠ” <strong>'ì¹˜'</strong>, <strong>'í'</strong>, <strong>'ê¹¡'</strong>ì´ ìžˆìŠµë‹ˆë‹¤.
+
+
+<strong>'ì¹˜'</strong>ëŠ” ë‚´ ì™¼ìª½ì‚¬ëžŒ(ìƒê°€)ì´ ÂšÂœì¸ ë¥¼ ì™„ì„±ì‹œí‚¬ ìˆ˜ ìžˆëŠ” íŒ¨ë¥¼ ëƒˆì„ ë•Œ <strong>'ì¹˜'</strong>ë¼ê³  ë°œì„±í•˜ê³  ê°€ì ¸ì˜¬ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+
+ë°œì„± í›„, ÂšÂœì¸ ë¥¼ ì™„ì„±ì‹œí‚¬ ë‚˜ë¨¸ì§€ íŒ¨ 2ê°œë¥¼ ìžì‹ ì˜ ì†ì—ì„œ ê³µê°œí•œ ë’¤,
+
+ìƒê°€ê°€ ë²„ë¦° íŒ¨ í•œê°œë¥¼ ê°€ì ¸ì™€ ìžì‹ ì˜ ìš°ì¸¡ìœ¼ë¡œ ë”°ë¡œ ë¹¼ë‘¡ë‹ˆë‹¤.
+
+ê·¸ë¦¬ê³  ìžì‹ ì˜ íŒ¨ ì¤‘ 1ê°œë¥¼ ë²„ë¦¬ë©´ Â‰æ±‚æ±‚.
+
+
+ì˜ˆë¥¼ë“¤ì–´, ìžì‹ ì´ 2,4ì‚­ì„ ê°€ì§€ê³  ìžˆëŠ”ë° ìƒê°€ê°€ 3ì‚­ì„ ëƒˆìœ¼ë©´...
+</pre>
+
+<img src="chii.png" alt="ì¹˜">
+
+<pre class="explain">
+'ì¹˜' ë°œì„± í›„ ë‹¤ìŒê³¼ ê°™ì´ ìš°ì¸¡ì— ê³µê°œí•˜ë©´ Â‰æ±‚æ±‚.
+
+ë°›ì•„ê°„ íŒ¨(3ì‚­)ë¥¼ ë°›ì•„ê°„ ìª½ ë°©í–¥(ì™¼ìª½)ìœ¼ë¡œ ëˆ•í˜€ì„œ í‘œì‹œí•´ì•¼ í•©ë‹ˆë‹¤. 
+
+
+<strong>'í'</strong>ì€ ì•„ë¬´ë‚˜ ì»¤ì¯”ë¥¼ ì™„ì„±ì‹œí‚¬ ìˆ˜ ìžˆëŠ” íŒ¨ë¥¼ ëƒˆì„ ë•Œ <strong>'í'</strong>ë¼ê³  ë°œì„±í•˜ê³  ê°€ì ¸ì˜¬ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+
+ì¹˜ì™€ ë§ˆì°¬ê°€ì§€ë¡œ ë°œì„± í›„ íŒ¨ 2ê°œë¥¼ ê³µê°œ, ìš°ì¸¡ì— ë”°ë¡œë¹¼ê³  íƒ€íŒ¨í•˜ë©´ Â‰æ±‚æ±‚.
+
+ì˜ˆë¥¼ë“¤ì–´, ë°œ(ç™¼) 2ìž¥ì„ ë“¤ê³  ìžˆëŠ”ë° ë§žì€íŽ¸ ì‚¬ëžŒ(ëŒ€ê°€)ì´ ë°œì„ ëƒˆì„ ë•Œ
+
+'í'ì´ë¼ê³  ë°œì„± í›„ íŒ¨ë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ë†“ê³  íƒ€íŒ¨í•˜ì‹œë©´ Â‰æ±‚æ±‚.
+</pre>
+
+<img src="pong.png" alt="í">
+
+<pre class="explain">
+
+<strong>'ê¹¡'</strong>ì€ ìœ„ì—ì„œ ìž ê¹ 'ê¹¡ì¦ˆ'ì— ëŒ€í•´ ì„¤ëª…í–ˆì—ˆëŠ”ë°, ì´ë¥¼ ë§Œë“¤ê¸° ìœ„í•œ ë°œì„±ìž…ë‹ˆë‹¤.
+
+ê¹¡ì—ëŠ” <strong>'ì•”ê¹¡'</strong>, <strong>'ê°€ê¹¡'</strong>, <strong>'ë°ê¹¡'</strong> 3ì¢…ë¥˜ê°€ ìžˆìŠµë‹ˆë‹¤.
+
+
+<strong>'ì•”ê¹¡'</strong>ì€ ìžì‹ ì˜ ì°¨ë¡€ë•Œ <strong>ê°™ì€ íŒ¨ 4ê°œë¥¼ ê³µê°œ</strong>í•˜ë©´ì„œ 'ê¹¡'ì„ ì„ ì–¸í•©ë‹ˆë‹¤.
+
+ê·¸ë¦¬ê³  ìš°ì¸¡ì— ë‹¤ìŒê³¼ ê°™ì´ ë†“ìŠµë‹ˆë‹¤.
+</pre>
+
+<img src="blindkang.png" alt="ì•”ê¹¡">
+
+<pre class="explain">
+<strong>'ê°€ê¹¡'</strong>ì€ ìžì‹ ì˜ ì°¨ë¡€ë•Œ <strong>ìžì‹ ì˜ ì†íŒ¨ì— ì´ë¯¸ í í•´ë†“ì€ íŒ¨ì˜ ë§ˆì§€ë§‰ í•œìž¥ì´ ë” ìžˆì„ ë•Œ</strong> í•˜ëŠ” 'ê¹¡'ìž…ë‹ˆë‹¤.
+
+ë°œì„± í›„, ëˆ•í˜€ë†“ì€ íŒ¨ ìœ„ì— ë‹¤ìŒê³¼ ê°™ì´ ê²¹ì³ë†“ìœ¼ì‹œë©´ Â‰æ±‚æ±‚.
+</pre>
+
+<img src="addkang.png" alt="ê°€ê¹¡">
+
+<pre class="explain">
+
+<strong>'ë°ê¹¡'</strong>(ëŒ€ëª…ê¹¡ì´ë¼ê³ ë„ í•©ë‹ˆë‹¤)ì€ ì»¤ì¯”(ê°™ì€ íŒ¨ 3ìž¥)ì„ ë“¤ê³  ìžˆëŠ” ìƒíƒœì—ì„œ
+
+<strong>ìƒëŒ€ë°©ì´ ìžì‹ ì˜ 'ê¹¡ì¦ˆ'ë¥¼ ì™„ì„±ì‹œí‚¬ ìˆ˜ ìžˆëŠ” ë§ˆì§€ë§‰ íŒ¨ í•œìž¥ì„ ëƒˆì„ ë•Œ</strong> í•˜ëŠ” 'ê¹¡'ìž…ë‹ˆë‹¤.
+
+ë‹¤ìŒê³¼ê°™ì´ ê°€ì ¸ì˜¨ ìª½ìœ¼ë¡œ ëˆ•í˜€ì„œ í‘œì‹œí•˜ì‹œë©´ Â‰æ±‚æ±‚.
+</pre>
+
+<img src="mingkang.png" alt="ë°ê¹¡">
+
+
+<pre class="explain">
+ì´ë•Œ, ì›ëž˜ ëª¸í†µì˜ ê°¯ìˆ˜ëŠ” 3ê°œì¸ë°, <strong>ê¹¡ì„ í•  ê²½ìš° 4ê°œê°€ ë¼ì–´ íŒ¨ê°€ í•˜ë‚˜ ëª¨ìžë¥´ê²Œ Â‰æ±‚æ±‚.</strong>
+
+ê·¸ëž˜ì„œ ê¹¡ì„ í•œ í›„ì—, <strong>ì˜ìƒì—ì„œ ë³´ì¶©íŒ¨ë¥¼ í•˜ë‚˜ ê°€ì ¸ì˜µë‹ˆë‹¤.</strong> ê·¸í›„ íŒ¨ í•˜ë‚˜ë¥¼ ë²„ë¦¬ì‹œë©´ Â‰æ±‚æ±‚.
+
+</pre>
+
+<div id="#rank" class="topic">&lt;ì—­&gt;</div>
+
+<pre class="explain">
+ë§ˆìž‘ì—ëŠ” <strong>'ì—­'</strong>ì´ëž€ê²Œ ì¡´ìž¬í•©ë‹ˆë‹¤.
+
+<strong>'ì—­'ì€ ìžì‹ ì˜ ì™„ì„±íŒ¨ê°€ ì–¼ë§ˆë‚˜ ê°’ì–´ì¹˜ê°€ ìžˆëŠ”ì§€ ê¸°ì¤€ì  ì—­í• ì„ í•©ë‹ˆë‹¤.</strong>
+
+ì—­ì´ ë§Žìœ¼ë©´ ë§Žì„ìˆ˜ë¡ ë°›ì„ ì ìˆ˜ëŠ” ì˜¬ë¼ê°ˆ ê²ƒì´ë©°, ë³„ë¡œ ì—†ìœ¼ë©´ ê·¸ë§Œí¼ ì ì€ ì ìˆ˜ë°–ì— ë°›ì§€ ëª»í•©ë‹ˆë‹¤.
+
+ê·¸ë¦¬ê³ , ì™„ì„± í˜•íƒœë¥¼ ë§Œë“¤ì—ˆë‹¤ê³  í•´ì„œ <strong>'ì—­'ì´ ì—†ìœ¼ë©´ 'í™”ë£Œ'ë¥¼ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.</strong>
+
+ê·¸ë§Œí¼ 'ì—­'ì´ ì¤‘ìš”í•œ ê²ƒì´ë‹ˆ ë§Žê¸´ í•˜ë”ë¼ë„ ê¼­ ì™¸ì›Œë‘¬ì•¼ í•  ì‚¬í•­ìž…ë‹ˆë‹¤.
+
+
+ë§ˆìž‘ ì—­ì€ ìƒë‹¹ížˆ ë§Žì€ íŽ¸ì´ë‹ˆ ë§í¬ë§Œ ê±¸ê³  ë„˜ì–´ê°€ê² ìŠµë‹ˆë‹¤.
+<a href="https://namu.wiki/w/%EB%A7%88%EC%9E%91%EC%9D%98%20%EC%97%AD">ë§í¬(ì—­)</a>
 
 </pre> 
 
-<div id="#add" class="topic">&lt;ºÎ¼ö&gt;</div>
+<div id="#add" class="topic">&lt;ë¶€ìˆ˜&gt;</div>
 
 <pre class="explain">
-ÃÊº¸ÀÚ ºÐµé²²¼± Áö±Ý ´çÀå ¾Æ½ÇÇÊ¿ä´Â ¾ø´Â ³»¿ëÀÔ´Ï´Ù. ¿ì¼± '¿ª'À» ´Ù ¿Ü¿ì½Ã´Â°Ô ¸ÕÀúÀÔ´Ï´Ù.
+ì´ˆë³´ìž ë¶„ë“¤ê»˜ì„  ì§€ê¸ˆ ë‹¹ìž¥ ì•„ì‹¤í•„ìš”ëŠ” ì—†ëŠ” ë‚´ìš©ìž…ë‹ˆë‹¤. ìš°ì„  'ì—­'ì„ ë‹¤ ì™¸ìš°ì‹œëŠ”ê²Œ ë¨¼ì €ìž…ë‹ˆë‹¤.
 
-±×¸®°í ÀÚ½ÅÀÌ ¸¸µç ÆÐ°¡ ¹«½¼ ¿ªÀ» °¡Áö°í ÀÖ´ÂÁö ¸»ÇÒ ¼ö ÀÖÀ» Á¤µµ°¡ µÇ°í Á¡Â÷ ÀÍ¼÷ÇØÁö½Ã¸é
+ê·¸ë¦¬ê³  ìžì‹ ì´ ë§Œë“  íŒ¨ê°€ ë¬´ìŠ¨ ì—­ì„ ê°€ì§€ê³  ìžˆëŠ”ì§€ ë§í•  ìˆ˜ ìžˆì„ ì •ë„ê°€ ë˜ê³  ì ì°¨ ìµìˆ™í•´ì§€ì‹œë©´
 
-ºÎ¼ö¿¡ ´ëÇØ ÀÐÀ¸¼Åµµ µË´Ï´Ù.
-
-
-<strong>ºÎ¼ö</strong>´Â <strong>Á¡¼ö¸¦ Á¤È®È÷ °è»êÇÏ±â À§ÇØ ÇÊ¿äÇÑ »çÇ×</strong>ÀÔ´Ï´Ù.
-
-´ë·«ÀûÀ¸·Î, ÆÐ¸¦ ¸¸µé±â ¾î·Á¿î Á¤µµ¸¸Å­ ºÎ¼ö°¡ ¿Ã¶ó°©´Ï´Ù.
-
-¸ðµç ÆÐ´Â ±âº»ÀûÀ¸·Î 20ºÎ¸¦ °¡Áö°í ÀÖÀ¸¸ç, ¸àÁ¨·ÐÀÏ °æ¿ì 30ºÎºÎÅÍ ½ÃÀÛÇÕ´Ï´Ù.
-
-±×¸®°í <strong>ÃÑ 4°¡Áö ¿ä¼Ò¿¡ µû¶ó ºÎ¼ö¸¦ Ãß°¡</strong>ÇÕ´Ï´Ù.
-
-¸¶Áö¸·À¸·Î <strong>10ÀÇÀÚ¸®·Î '¿Ã¸²'</strong>À» ÇÏ¸é ÃÖÁ¾ ºÎ¼ö°¡ µË´Ï´Ù. (ex. °è»ê ³¡¿¡ 32ºÎ°¡ ³ª¿Ô´Ù¸é ¿Ã¸²ÇÏ¿© 40ºÎ°¡ ‰Ï´Ï´Ù.)
-
-¿¹¿ÜÀûÀ¸·Î <strong>'Ä¡¶ÇÀÌ' ¿ªÀº ¹«Á¶°Ç 25ºÎ</strong>ÀÔ´Ï´Ù.
+ë¶€ìˆ˜ì— ëŒ€í•´ ì½ìœ¼ì…”ë„ ë©ë‹ˆë‹¤.
 
 
-Ã¹Â°·Î, <strong>'Âê¸ðºÎ¼ö'</strong>ÀÔ´Ï´Ù.(ÀÚ½ÅÀÌ ÆÐ¸¦ Á÷Á¢ °¡Á®¿Í¼­ È­·áÇÑ °æ¿ì)
+<strong>ë¶€ìˆ˜</strong>ëŠ” <strong>ì ìˆ˜ë¥¼ ì •í™•ížˆ ê³„ì‚°í•˜ê¸° ìœ„í•´ í•„ìš”í•œ ì‚¬í•­</strong>ìž…ë‹ˆë‹¤.
 
-»ó´ë¹æ¿¡°Ô ·ÐÀ» ¼±¾ðÇÏ¿© È­·áÇÑ °æ¿ì ÀÌ ¿ä¼Ò¿¡¼­ ¾ò´Â ºÎ¼ö´Â 0ºÎÀÔ´Ï´Ù.
+ëŒ€ëžµì ìœ¼ë¡œ, íŒ¨ë¥¼ ë§Œë“¤ê¸° ì–´ë ¤ìš´ ì •ë„ë§Œí¼ ë¶€ìˆ˜ê°€ ì˜¬ë¼ê°‘ë‹ˆë‹¤.
 
-ÇÏÁö¸¸ 'Âê¸ð'·Î È­·áÇÑ °æ¿ì 'Âê¸ðºÎ¼ö' 2ºÎ¸¦ ¾òÀ» ¼ö ÀÖ½À´Ï´Ù.
+ëª¨ë“  íŒ¨ëŠ” ê¸°ë³¸ì ìœ¼ë¡œ 20ë¶€ë¥¼ ê°€ì§€ê³  ìžˆìœ¼ë©°, ë©˜ì  ë¡ ì¼ ê²½ìš° 30ë¶€ë¶€í„° ì‹œìž‘í•©ë‹ˆë‹¤.
 
-¿¹¿ÜÀûÀ¸·Î, ¿µ»ó°³È­ È­·áÀÇ °æ¿ì Âê¸ðºÎ¼ö°¡ ºÙÁö ¾Ê½À´Ï´Ù. (ºÎ¼ö´ë½Å ¿µ»ó°³È­¶ó´Â 1ÆÇ¿ªÀÌ Ãß°¡µÇ´Â »ù)
+ê·¸ë¦¬ê³  <strong>ì´ 4ê°€ì§€ ìš”ì†Œì— ë”°ë¼ ë¶€ìˆ˜ë¥¼ ì¶”ê°€</strong>í•©ë‹ˆë‹¤.
+
+ë§ˆì§€ë§‰ìœ¼ë¡œ <strong>10ì˜ìžë¦¬ë¡œ 'ì˜¬ë¦¼'</strong>ì„ í•˜ë©´ ìµœì¢… ë¶€ìˆ˜ê°€ ë©ë‹ˆë‹¤. (ex. ê³„ì‚° ëì— 32ë¶€ê°€ ë‚˜ì™”ë‹¤ë©´ ì˜¬ë¦¼í•˜ì—¬ 40ë¶€ê°€ Â‰æ±‚æ±‚.)
+
+ì˜ˆì™¸ì ìœ¼ë¡œ <strong>'ì¹˜ë˜ì´' ì—­ì€ ë¬´ì¡°ê±´ 25ë¶€</strong>ìž…ë‹ˆë‹¤.
+
+
+ì²«ì§¸ë¡œ, <strong>'ì¯”ëª¨ë¶€ìˆ˜'</strong>ìž…ë‹ˆë‹¤.(ìžì‹ ì´ íŒ¨ë¥¼ ì§ì ‘ ê°€ì ¸ì™€ì„œ í™”ë£Œí•œ ê²½ìš°)
+
+ìƒëŒ€ë°©ì—ê²Œ ë¡ ì„ ì„ ì–¸í•˜ì—¬ í™”ë£Œí•œ ê²½ìš° ì´ ìš”ì†Œì—ì„œ ì–»ëŠ” ë¶€ìˆ˜ëŠ” 0ë¶€ìž…ë‹ˆë‹¤.
+
+í•˜ì§€ë§Œ 'ì¯”ëª¨'ë¡œ í™”ë£Œí•œ ê²½ìš° 'ì¯”ëª¨ë¶€ìˆ˜' 2ë¶€ë¥¼ ì–»ì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+
+ì˜ˆì™¸ì ìœ¼ë¡œ, ì˜ìƒê°œí™” í™”ë£Œì˜ ê²½ìš° ì¯”ëª¨ë¶€ìˆ˜ê°€ ë¶™ì§€ ì•ŠìŠµë‹ˆë‹¤. (ë¶€ìˆ˜ëŒ€ì‹  ì˜ìƒê°œí™”ë¼ëŠ” 1íŒì—­ì´ ì¶”ê°€ë˜ëŠ” ìƒ˜)
 </pre>
 
 <table border="1">
-	<caption><strong>Âê¸ðºÎ¼ö</strong></caption>
+	<caption><strong>ì¯”ëª¨ë¶€ìˆ˜</strong></caption>
 	<tr class="col">
 		<td></td>
-		<td>ºÎ¼ö</td>
+		<td>ë¶€ìˆ˜</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>·Ð</td>
+		<td>ë¡ </td>
 		<td>0</td>
 	</tr>
 </table>
 
 <pre class="explain">
 
-µÑÂ°·Î, <strong>'Ä¿ÂêºÎ¼ö'</strong>ÀÔ´Ï´Ù.
+ë‘˜ì§¸ë¡œ, <strong>'ì»¤ì¯”ë¶€ìˆ˜'</strong>ìž…ë‹ˆë‹¤.
 
-Ä¿Âê/±øÁî ÀÇ °¹¼ö¿Í ÇüÅÂ¿¡ µû¶ó ºÙ´Â ºÎ¼ö°¡ ´Ù¸¨´Ï´Ù.
+ì»¤ì¯”/ê¹¡ì¦ˆ ì˜ ê°¯ìˆ˜ì™€ í˜•íƒœì— ë”°ë¼ ë¶™ëŠ” ë¶€ìˆ˜ê°€ ë‹¤ë¦…ë‹ˆë‹¤.
 
-ºÎ¼ö´Â ´ÙÀ½°ú °°½À´Ï´Ù.
+ë¶€ìˆ˜ëŠ” ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤.
 </pre>
 
 <table border="1">
-	<caption><strong>Ä¿ÂêºÎ¼ö</strong></caption>
+	<caption><strong>ì»¤ì¯”ë¶€ìˆ˜</strong></caption>
 	<tr class="col">
 		<td></td>
-		<td>ÁßÀåÆÐ</td>
-		<td>±ÍÁ·ÆÐ</td>
+		<td>ì¤‘ìž¥íŒ¨</td>
+		<td>ê·€ì¡±íŒ¨</td>
 	</tr>
 	<tr>
-		<td>¹ÖÄ¿</td>
+		<td>ë°ì»¤</td>
 		<td>2</td>
 		<td>4</td>
 	</tr>
 	<tr>
-		<td>¾ÈÄ¿</td>
+		<td>ì•ˆì»¤</td>
 		<td>4</td>
 		<td>8</td>
 	</tr>
 	<tr>
-		<td>¹Ö±ø</td>
+		<td>ë°ê¹¡</td>
 		<td>8</td>
 		<td>16</td>
 	</tr>
 	<tr>
-		<td>¾Ï±ø</td>
+		<td>ì•”ê¹¡</td>
 		<td>16</td>
 		<td>32</td>
 	</tr>
@@ -349,163 +350,163 @@ goto...
 
 
 <pre class="explain">
-¿©±â¼­ ±ÍÁ·ÆÐ´Â '1, 9 ÀÚÆÐ'¸¦ ¸»ÇÏ¸ç, ÁßÀåÆÐ´Â '2~8±îÁö ¼öÆÐ'¸¦ ¶æÇÕ´Ï´Ù.
+ì—¬ê¸°ì„œ ê·€ì¡±íŒ¨ëŠ” '1, 9 ìžíŒ¨'ë¥¼ ë§í•˜ë©°, ì¤‘ìž¥íŒ¨ëŠ” '2~8ê¹Œì§€ ìˆ˜íŒ¨'ë¥¼ ëœ»í•©ë‹ˆë‹¤.
 
 
-¼ÂÂ°·Î, <strong>'´ë±âºÎ¼ö'</strong>ÀÔ´Ï´Ù.
+ì…‹ì§¸ë¡œ, <strong>'ëŒ€ê¸°ë¶€ìˆ˜'</strong>ìž…ë‹ˆë‹¤.
 
-¸¶ÀÛ¿¡¼­ ´ë±âÇüÅÂ·Î´Â ±âº»ÀûÀ¸·Î <strong>5°¡Áö</strong>°¡ ÀÖ½À´Ï´Ù. (¿¹¿Ü·Î ±¹»ç¹«½Ö13¸éÆÃÀÌ ÀÖÁö¿ä.)
+ë§ˆìž‘ì—ì„œ ëŒ€ê¸°í˜•íƒœë¡œëŠ” ê¸°ë³¸ì ìœ¼ë¡œ <strong>5ê°€ì§€</strong>ê°€ ìžˆìŠµë‹ˆë‹¤. (ì˜ˆì™¸ë¡œ êµ­ì‚¬ë¬´ìŒ13ë©´íŒ…ì´ ìžˆì§€ìš”.)
 
-<strong>'¾ç¸é´ë±â'</strong>(23»èÀ» µé°í 14»èÀ» ±â´Ù¸®´Â °æ¿ì)´Â ºÎ¼ö°¡ ºÙÁö ¾Ê½À´Ï´Ù. (0ºÎ)
+<strong>'ì–‘ë©´ëŒ€ê¸°'</strong>(23ì‚­ì„ ë“¤ê³  14ì‚­ì„ ê¸°ë‹¤ë¦¬ëŠ” ê²½ìš°)ëŠ” ë¶€ìˆ˜ê°€ ë¶™ì§€ ì•ŠìŠµë‹ˆë‹¤. (0ë¶€)
 
-<strong>'°£Â¯´ë±â'</strong>(24»èÀ» Áö´Ï°í 3»èÀ» ±â´Ù¸®´Â °æ¿ì, Ä­´ë±â)´Â 2ºÎ°¡ Ãß°¡µË´Ï´Ù.
+<strong>'ê°„ì§±ëŒ€ê¸°'</strong>(24ì‚­ì„ ì§€ë‹ˆê³  3ì‚­ì„ ê¸°ë‹¤ë¦¬ëŠ” ê²½ìš°, ì¹¸ëŒ€ê¸°)ëŠ” 2ë¶€ê°€ ì¶”ê°€ë©ë‹ˆë‹¤.
 
-<strong>'º¯Â¯´ë±â'</strong>(24»èÀ» Áö´Ï°í 3»èÀ» ±â´Ù¸®´Â °æ¿ì, Ææ´ë±â)´Â 2ºÎ°¡ Ãß°¡µË´Ï´Ù.
+<strong>'ë³€ì§±ëŒ€ê¸°'</strong>(24ì‚­ì„ ì§€ë‹ˆê³  3ì‚­ì„ ê¸°ë‹¤ë¦¬ëŠ” ê²½ìš°, íŽœëŒ€ê¸°)ëŠ” 2ë¶€ê°€ ì¶”ê°€ë©ë‹ˆë‹¤.
 
-<strong>'´Ü±â´ë±â'</strong>(¸Ó¸®°¡ ¾ø¾î¼­ 1Åë ÇÏ³ª µé°í ´Ù¸¥1ÅëÀ» ±â´Ù¸®´Â °æ¿ì)´Â 2ºÎ°¡ Ãß°¡µË´Ï´Ù.
+<strong>'ë‹¨ê¸°ëŒ€ê¸°'</strong>(ë¨¸ë¦¬ê°€ ì—†ì–´ì„œ 1í†µ í•˜ë‚˜ ë“¤ê³  ë‹¤ë¥¸1í†µì„ ê¸°ë‹¤ë¦¬ëŠ” ê²½ìš°)ëŠ” 2ë¶€ê°€ ì¶”ê°€ë©ë‹ˆë‹¤.
 
-<strong>'»þº¸´ë±â'</strong>(1Åë2°³ 2Åë2°³¿¡¼­ 1,2ÅëÀ» ±â´Ù¸®´Â °æ¿ì)´Â ºÎ¼ö°¡ ºÙÁö ¾Ê½À´Ï´Ù.
-(ÀÌ¹Ì Ä¿Âê¿¡¼­ ºÎ¼ö°¡ ºÙ±â ¶§¹®¿¡ µû·Î ºÎ¼ö¸¦ ÃÄÁÖÁö ¾Ê´Â °ÍÀÌÁö¿ä.)
+<strong>'ìƒ¤ë³´ëŒ€ê¸°'</strong>(1í†µ2ê°œ 2í†µ2ê°œì—ì„œ 1,2í†µì„ ê¸°ë‹¤ë¦¬ëŠ” ê²½ìš°)ëŠ” ë¶€ìˆ˜ê°€ ë¶™ì§€ ì•ŠìŠµë‹ˆë‹¤.
+(ì´ë¯¸ ì»¤ì¯”ì—ì„œ ë¶€ìˆ˜ê°€ ë¶™ê¸° ë•Œë¬¸ì— ë”°ë¡œ ë¶€ìˆ˜ë¥¼ ì³ì£¼ì§€ ì•ŠëŠ” ê²ƒì´ì§€ìš”.)
 </pre> 
 
 <table border="1">
-	<caption><strong>´ë±âºÎ¼ö</strong></caption>
+	<caption><strong>ëŒ€ê¸°ë¶€ìˆ˜</strong></caption>
 	<tr class="col">
-		<td>´ë±âÇüÅÂ</td>
-		<td>ºÎ¼ö</td>
+		<td>ëŒ€ê¸°í˜•íƒœ</td>
+		<td>ë¶€ìˆ˜</td>
 	</tr>
 	<tr>
-		<td>¾ç¸é</td>
+		<td>ì–‘ë©´</td>
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>»þº¸</td>
+		<td>ìƒ¤ë³´</td>
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>°£Â¯</td>
+		<td>ê°„ì§±</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>º¯Â¯</td>
+		<td>ë³€ì§±</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>´Ü±â</td>
+		<td>ë‹¨ê¸°</td>
 		<td>2</td>
 	</tr>
 </table>
 
 <pre class="explain">
-¸¸¾à¿¡ ¿©·¯°¡Áö ´ë±â·Î º¼ ¼ö ÀÖ´Â ÇüÅÂ¶ó¸é '°íµæÁ¡'ÀÌ µÇ´Â ¹æÇâÀ¸·Î ÇØ¼®ÇÏ½Ã¸é µË´Ï´Ù.
+ë§Œì•½ì— ì—¬ëŸ¬ê°€ì§€ ëŒ€ê¸°ë¡œ ë³¼ ìˆ˜ ìžˆëŠ” í˜•íƒœë¼ë©´ 'ê³ ë“ì 'ì´ ë˜ëŠ” ë°©í–¥ìœ¼ë¡œ í•´ì„í•˜ì‹œë©´ ë©ë‹ˆë‹¤.
 
 
 
-¸¶Áö¸·À¸·Î <strong>'¸Ó¸®ºÎ¼ö'</strong>ÀÔ´Ï´Ù.
+ë§ˆì§€ë§‰ìœ¼ë¡œ <strong>'ë¨¸ë¦¬ë¶€ìˆ˜'</strong>ìž…ë‹ˆë‹¤.
 
-¸Ó¸®°¡ ¸¸¾à ¾ÈÄ¿°¡ µÆÀ» ¶§ ¿ªÀÌ ºÙ´Â °æ¿ì, ºÎ¼ö°¡ Ãß°¡‰Ï´Ï´Ù.
+ë¨¸ë¦¬ê°€ ë§Œì•½ ì•ˆì»¤ê°€ ëì„ ë•Œ ì—­ì´ ë¶™ëŠ” ê²½ìš°, ë¶€ìˆ˜ê°€ ì¶”ê°€Â‰æ±‚æ±‚.
 
-ºÎ¼ö´Â ´ÙÀ½°ú °°½À´Ï´Ù. (¿¬Ç³ÆÐ´Â µ¿Àå¿¡ µ¿°¡ÀÏ ¶§ µ¿ÆÐ¸¦, ³²Àå¿¡ ³²°¡ÀÏ¶§ ³²ÆÐ¸¦ ¶æÇÕ´Ï´Ù.)
+ë¶€ìˆ˜ëŠ” ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤. (ì—°í’íŒ¨ëŠ” ë™ìž¥ì— ë™ê°€ì¼ ë•Œ ë™íŒ¨ë¥¼, ë‚¨ìž¥ì— ë‚¨ê°€ì¼ë•Œ ë‚¨íŒ¨ë¥¼ ëœ»í•©ë‹ˆë‹¤.)
 </pre>
 <table border="1">
-	<caption><strong>¸Ó¸®ºÎ¼ö</strong></caption>
+	<caption><strong>ë¨¸ë¦¬ë¶€ìˆ˜</strong></caption>
 	<tr class="col">
-		<td>¸Ó¸®ÇüÅÂ</td>
-		<td>ºÎ¼ö</td>
+		<td>ë¨¸ë¦¬í˜•íƒœ</td>
+		<td>ë¶€ìˆ˜</td>
 	</tr>
 	<tr>
-		<td>¿¬Ç³ÆÐ</td>
+		<td>ì—°í’íŒ¨</td>
 		<td>4</td>
 	</tr>
 	<tr>
-		<td>ÀÚÇ³ÆÐ</td>
+		<td>ìží’íŒ¨</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>ÆÇÇ³ÆÐ</td>
+		<td>íŒí’íŒ¨</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>»ï¿øÆÐ</td>
+		<td>ì‚¼ì›íŒ¨</td>
 		<td>2</td>
 	</tr>
 	<tr>
-		<td>Å¸Ç³ÆÐ</td>
+		<td>íƒ€í’íŒ¨</td>
 		<td>0</td>
 	</tr>
 	<tr>
-		<td>¼öÆÐ</td>
+		<td>ìˆ˜íŒ¨</td>
 		<td>0</td>
 	</tr>
 </table>
 
 <pre class="explain">
 
-ÀÌ 4°¡Áö ¿ä¼Ò¸¦ °í·ÁÇØ¼­ ºÎ¼ö¸¦ °è»êÇÏ½Ã¸é ‰Ï´Ï´Ù.
+ì´ 4ê°€ì§€ ìš”ì†Œë¥¼ ê³ ë ¤í•´ì„œ ë¶€ìˆ˜ë¥¼ ê³„ì‚°í•˜ì‹œë©´ Â‰æ±‚æ±‚.
 
-¿¹½Ã·Î 3°¡Áö¸¸ µéÀÚ¸é...
+ì˜ˆì‹œë¡œ 3ê°€ì§€ë§Œ ë“¤ìžë©´...
 </pre>
 
-<img src="busuex.png" alt="ºÎ¼ö¿¹Á¦">
+<img src="busuex.png" alt="ë¶€ìˆ˜ì˜ˆì œ">
 
 <pre class="explain">
 
-<strong>Ã¹¹øÂ°´Â</strong> ±âº»20ºÎ + Âê¸ðºÎ¼ö2ºÎ + ÁßÀåÆÐ¾Ï±ø16ºÎ + ±ÍÁ·ÆÐ¹Ö±ø16ºÎ + °£Â¯´ë±â2ºÎ + ¿¬Ç³ÆÐ¸Ó¸®4ºÎ = 60ºÎ
+<strong>ì²«ë²ˆì§¸ëŠ”</strong> ê¸°ë³¸20ë¶€ + ì¯”ëª¨ë¶€ìˆ˜2ë¶€ + ì¤‘ìž¥íŒ¨ì•”ê¹¡16ë¶€ + ê·€ì¡±íŒ¨ë°ê¹¡16ë¶€ + ê°„ì§±ëŒ€ê¸°2ë¶€ + ì—°í’íŒ¨ë¨¸ë¦¬4ë¶€ = 60ë¶€
 
-<strong>¿Ã¸²ÇØµµ 60ºÎÀÔ´Ï´Ù.</strong>
+<strong>ì˜¬ë¦¼í•´ë„ 60ë¶€ìž…ë‹ˆë‹¤.</strong>
 
-<strong>µÎ¹øÂ°´Â</strong> ±âº»20ºÎ + Âê¸ðºÎ¼ö2ºÎ + ±ÍÁ·ÆÐ¾ÈÄ¿8ºÎ + ´Ü±â´ë±â2ºÎ = 32ºÎ
+<strong>ë‘ë²ˆì§¸ëŠ”</strong> ê¸°ë³¸20ë¶€ + ì¯”ëª¨ë¶€ìˆ˜2ë¶€ + ê·€ì¡±íŒ¨ì•ˆì»¤8ë¶€ + ë‹¨ê¸°ëŒ€ê¸°2ë¶€ = 32ë¶€
 
-<strong>¿Ã¸²ÇÏ¿© 40ºÎÀÔ´Ï´Ù.</strong>
+<strong>ì˜¬ë¦¼í•˜ì—¬ 40ë¶€ìž…ë‹ˆë‹¤.</strong>
 
-¹°·Ð 78»è ¾ç¸é´ë±â·Î º¼ ¼öµµ ÀÖ°ÚÁö¸¸, 9»è´Ü±â·Îµµ º¼ ¼ö ÀÖ±â¿¡, °íµæÁ¡À¸·Î ÇØ¼®ÇÕ´Ï´Ù.
+ë¬¼ë¡  78ì‚­ ì–‘ë©´ëŒ€ê¸°ë¡œ ë³¼ ìˆ˜ë„ ìžˆê² ì§€ë§Œ, 9ì‚­ë‹¨ê¸°ë¡œë„ ë³¼ ìˆ˜ ìžˆê¸°ì—, ê³ ë“ì ìœ¼ë¡œ í•´ì„í•©ë‹ˆë‹¤.
 
-<strong>¼¼¹øÂ°´Â</strong> ¸àÁ¨·Ð30ºÎ + ±ÍÁ·ÆÐ¾ÈÄ¿ 8ºÎ + ´Ü±â´ë±â2ºÎ + »ï¿øÆÐ¸Ó¸®2ºÎ = 42ºÎ
+<strong>ì„¸ë²ˆì§¸ëŠ”</strong> ë©˜ì  ë¡ 30ë¶€ + ê·€ì¡±íŒ¨ì•ˆì»¤ 8ë¶€ + ë‹¨ê¸°ëŒ€ê¸°2ë¶€ + ì‚¼ì›íŒ¨ë¨¸ë¦¬2ë¶€ = 42ë¶€
 
-<strong>¿Ã¸²ÇÏ¿© 50ºÎÀÔ´Ï´Ù.</strong>
+<strong>ì˜¬ë¦¼í•˜ì—¬ 50ë¶€ìž…ë‹ˆë‹¤.</strong>
 
 </pre>
 
-<div id="#cal" class="topic">&lt;Á¡¼ö°è»ê¹ý&gt;</div>
+<div id="#cal" class="topic">&lt;ì ìˆ˜ê³„ì‚°ë²•&gt;</div>
 
 <pre class="explain">
 
-À§¿¡¼­ ±¸Çß´ø ¿ª°ú ºÎ¼ö¸¦ Åä´ë·Î ÆÐÀÇ Á¡¼ö¸¦ ¸Å±é´Ï´Ù.
+ìœ„ì—ì„œ êµ¬í–ˆë˜ ì—­ê³¼ ë¶€ìˆ˜ë¥¼ í† ëŒ€ë¡œ íŒ¨ì˜ ì ìˆ˜ë¥¼ ë§¤ê¹ë‹ˆë‹¤.
 
-Á¡¼ö´Â ´ÙÀ½°ú °°½À´Ï´Ù.
+ì ìˆ˜ëŠ” ë‹¤ìŒê³¼ ê°™ìŠµë‹ˆë‹¤.
 </pre>
 
 <table border="1">
-	<caption><strong>ÀÚ Á¡¼öÈ¯»êÇ¥(1~4ÆÇ)</strong></caption>
+	<caption><strong>ìž ì ìˆ˜í™˜ì‚°í‘œ(1~4íŒ)</strong></caption>
 	<tr class="col">
-		<td rowspan="2">ºÎ¼ö</td>
+		<td rowspan="2">ë¶€ìˆ˜</td>
 		<td></td>
-		<td colspan="2">1ÆÇ</td>
-		<td colspan="2">2ÆÇ</td>
-		<td colspan="2">3ÆÇ</td>
-		<td colspan="2">4ÆÇ</td>
+		<td colspan="2">1íŒ</td>
+		<td colspan="2">2íŒ</td>
+		<td colspan="2">3íŒ</td>
+		<td colspan="2">4íŒ</td>
 	</tr>
 	<tr class="col">
 		<td></td>
-		<td>Ä£</td>
-		<td>ÀÚ</td>
-		<td>Ä£</td>
-		<td>ÀÚ</td>
-		<td>Ä£</td>
-		<td>ÀÚ</td>
-		<td>Ä£</td>
-		<td>ÀÚ</td>
+		<td>ì¹œ</td>
+		<td>ìž</td>
+		<td>ì¹œ</td>
+		<td>ìž</td>
+		<td>ì¹œ</td>
+		<td>ìž</td>
+		<td>ì¹œ</td>
+		<td>ìž</td>
 	</tr>
 	<tr>
-		<td rowspan="2">20ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">20ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">-</td>
 		<td colspan="2">-</td>
 		<td colspan="2">-</td>
 		<td colspan="2">-</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td colspan="2">-</td>
 		<td>700</td>
 		<td>400</td>
@@ -515,15 +516,15 @@ goto...
 		<td>1300</td>
 	</tr>
 	<tr>
-		<td rowspan="2">30ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">30ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">1000</td>
 		<td colspan="2">2000</td>
 		<td colspan="2">3900</td>
 		<td colspan="2">7700</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>500</td>
 		<td>300</td>
 		<td>1000</td>
@@ -534,15 +535,15 @@ goto...
 		<td>2000</td>
 	</tr>
 	<tr>
-		<td rowspan="2">40ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">40ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">1300</td>
 		<td colspan="2">2600</td>
 		<td colspan="2">5200</td>
-		<td colspan="2" rowspan="8">¸¸°ü</td>
+		<td colspan="2" rowspan="8">ë§Œê´€</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>700</td>
 		<td>400</td>
 		<td>1300</td>
@@ -551,14 +552,14 @@ goto...
 		<td>1300</td>
 	</tr>
 	<tr>
-		<td rowspan="2">50ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">50ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">1600</td>
 		<td colspan="2">3200</td>
 		<td colspan="2">6400</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>800</td>
 		<td>400</td>
 		<td>1600</td>
@@ -567,14 +568,14 @@ goto...
 		<td>1600</td>
 	</tr>
 	<tr>
-		<td rowspan="2">60ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">60ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">2000</td>
 		<td colspan="2">3900</td>
 		<td colspan="2">7700</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>1000</td>
 		<td>500</td>
 		<td>2000</td>
@@ -583,14 +584,14 @@ goto...
 		<td>2000</td>
 	</tr>
 	<tr>
-		<td rowspan="2">70ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">70ë¶€</td>
+		<td>ë¡ </td>
 		<td colspan="2">2300</td>
 		<td colspan="2">4500</td>
-		<td colspan="2" rowspan="2">¸¸°ü</td>
+		<td colspan="2" rowspan="2">ë§Œê´€</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>1200</td>
 		<td>600</td>
 		<td>2300</td>
@@ -602,94 +603,94 @@ goto...
 
 
 <table border="1">
-	<caption><strong>Ä£ Á¡¼öÈ¯»êÇ¥(1~4ÆÇ)</strong></caption>
+	<caption><strong>ì¹œ ì ìˆ˜í™˜ì‚°í‘œ(1~4íŒ)</strong></caption>
 	<tr class="col">
-		<td>ºÎ¼ö</td>
+		<td>ë¶€ìˆ˜</td>
 		<td></td>
-		<td>1ÆÇ</td>
-		<td>2ÆÇ</td>
-		<td>3ÆÇ</td>
-		<td>4ÆÇ</td>
+		<td>1íŒ</td>
+		<td>2íŒ</td>
+		<td>3íŒ</td>
+		<td>4íŒ</td>
 	</tr>
 	<tr>
-		<td rowspan="2">20ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">20ë¶€</td>
+		<td>ë¡ </td>
 		<td>-</td>
 		<td>-</td>
 		<td></td>
 		<td>-</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>-</td>
 		<td>700</td>
 		<td>1300</td>
 		<td>2600</td>
 	</tr>
 	<tr>
-		<td rowspan="2">30ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">30ë¶€</td>
+		<td>ë¡ </td>
 		<td>1500</td>
 		<td>2900</td>
 		<td>5800</td>
 		<td>11600</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>500</td>
 		<td>1000</td>
 		<td>2000</td>
 		<td>3900</td>
 	</tr>
 	<tr>
-		<td rowspan="2">40ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">40ë¶€</td>
+		<td>ë¡ </td>
 		<td>2000</td>
 		<td>3900</td>
 		<td>7700</td>
-		<td rowspan="8">¸¸°ü</td>
+		<td rowspan="8">ë§Œê´€</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>700</td>
 		<td>1300</td>
 		<td>2600</td>
 	</tr>
 	<tr>
-		<td rowspan="2">50ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">50ë¶€</td>
+		<td>ë¡ </td>
 		<td>2400</td>
 		<td>4800</td>
 		<td>9600</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>800</td>
 		<td>1600</td>
 		<td>3200</td>
 	</tr>
 	<tr>
-		<td rowspan="2">60ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">60ë¶€</td>
+		<td>ë¡ </td>
 		<td>2900</td>
 		<td>5800</td>
 		<td>11600</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>1000</td>
 		<td>2000</td>
 		<td>3900</td>
 	</tr>
 	<tr>
-		<td rowspan="2">70ºÎ</td>
-		<td>·Ð</td>
+		<td rowspan="2">70ë¶€</td>
+		<td>ë¡ </td>
 		<td >3400</td>
 		<td >6800</td>
-		<td rowspan="2">¸¸°ü</td>
+		<td rowspan="2">ë§Œê´€</td>
 	</tr>
 	<tr>
-		<td>Âê¸ð</td>
+		<td>ì¯”ëª¨</td>
 		<td>1200</td>
 		<td>2300</td>
 	</tr>
@@ -699,20 +700,20 @@ goto...
 
 
 <table id="table5" border="1">
-	<caption><strong>Á¡¼öÈ¯»êÇ¥(5ÆÇ ÀÌ»ó)</strong></caption>
+	<caption><strong>ì ìˆ˜í™˜ì‚°í‘œ(5íŒ ì´ìƒ)</strong></caption>
 	<tr class="col">
-		<td>È­·áÇÑ<br/>»ç¶÷</td>
+		<td>í™”ë£Œí•œ<br/>ì‚¬ëžŒ</td>
 		<td></td>
-		<td>ÁöºÒÇÒ<br/>»ç¶÷</td>
-		<td>¸¸°ü<br/>(5ÆÇ)</td>
-		<td>ÇÏ³×¸¸<br/>(6~7ÆÇ)</td>
-		<td>¹è¸¸<br/>(8~10ÆÇ)</td>
-		<td>»ï¹è¸¸<br/>(11~12ÆÇ)</td>
-		<td>¿ª¸¸<br/>(13ÆÇÀÌ»ó)</td>
+		<td>ì§€ë¶ˆí• <br/>ì‚¬ëžŒ</td>
+		<td>ë§Œê´€<br/>(5íŒ)</td>
+		<td>í•˜ë„¤ë§Œ<br/>(6~7íŒ)</td>
+		<td>ë°°ë§Œ<br/>(8~10íŒ)</td>
+		<td>ì‚¼ë°°ë§Œ<br/>(11~12íŒ)</td>
+		<td>ì—­ë§Œ<br/>(13íŒì´ìƒ)</td>
 	</tr>
 	<tr>
-		<td rowspan="3">ÀÚ</td>
-		<td colspan="2">·Ð</td>
+		<td rowspan="3">ìž</td>
+		<td colspan="2">ë¡ </td>
 		<td>8000</td>
 		<td>12000</td>
 		<td>16000</td>
@@ -720,8 +721,8 @@ goto...
 		<td>36000</td>
 	</tr>
 	<tr>
-		<td rowspan="2">Âê¸ð</td>
-		<td>ÀÚ</td>
+		<td rowspan="2">ì¯”ëª¨</td>
+		<td>ìž</td>
 		<td>2000</td>
 		<td>3000</td>
 		<td>4000</td>
@@ -729,7 +730,7 @@ goto...
 		<td>8000</td>
 	</tr>
 	<tr>
-		<td>Ä£</td>
+		<td>ì¹œ</td>
 		<td>4000</td>
 		<td>6000</td>
 		<td>8000</td>
@@ -737,8 +738,8 @@ goto...
 		<td>16000</td>
 	</tr>
 	<tr>
-		<td rowspan="2">Ä£</td>
-		<td colspan="2">·Ð</td>
+		<td rowspan="2">ì¹œ</td>
+		<td colspan="2">ë¡ </td>
 		<td>12000</td>
 		<td>18000</td>
 		<td>24000</td>
@@ -746,7 +747,7 @@ goto...
 		<td>48000</td>
 	</tr>
 	<tr>
-		<td colspan="2">Âê¸ð</td>
+		<td colspan="2">ì¯”ëª¨</td>
 		<td>4000</td>
 		<td>6000</td>
 		<td>8000</td>
@@ -759,33 +760,33 @@ goto...
 
 <pre class="explain">
 
-¿¹¸¦ ¿©·¯°³ µéÀÚ¸é...
+ì˜ˆë¥¼ ì—¬ëŸ¬ê°œ ë“¤ìžë©´...
 
-'ÀÚ'°¡ ¸®Ä¡ Âê¸ð ÇÎÈÄ µµ¶ó 4ÆÇ 20ºÎ ÆÐ¶ó°í ÇÑ´Ù¸é Ä£Àº 2600, ÀÚ´Â 1300³À´Ï´Ù.
+'ìž'ê°€ ë¦¬ì¹˜ ì¯”ëª¨ í•‘í›„ ë„ë¼ 4íŒ 20ë¶€ íŒ¨ë¼ê³  í•œë‹¤ë©´ ì¹œì€ 2600, ìžëŠ” 1300ëƒ…ë‹ˆë‹¤.
 
-ÀÚ°¡ Áß È¥ÀÏÀÇ 3ÆÇ 30ºÎ·Î ·ÐÀ» ¼±¾ðÇß´Ù¸é 3900À» ¾ò¾î°©´Ï´Ù.
+ìžê°€ ì¤‘ í˜¼ì¼ì˜ 3íŒ 30ë¶€ë¡œ ë¡ ì„ ì„ ì–¸í–ˆë‹¤ë©´ 3900ì„ ì–»ì–´ê°‘ë‹ˆë‹¤.
 
-Ä£ÀÌ 9ÆÇÀ¸·Î ·ÐÀ» ¼±¾ðÇß´Ù¸é 24000Á¡ÀÔ´Ï´Ù.
+ì¹œì´ 9íŒìœ¼ë¡œ ë¡ ì„ ì„ ì–¸í–ˆë‹¤ë©´ 24000ì ìž…ë‹ˆë‹¤.
 
-µîµî... Ç¥¸¦ ÀÌ¿ëÇÏ¿© Á¡¼ö¸¦ ¼±¾ðÇÏ½Ã¸é ‰Ï´Ï´Ù.
+ë“±ë“±... í‘œë¥¼ ì´ìš©í•˜ì—¬ ì ìˆ˜ë¥¼ ì„ ì–¸í•˜ì‹œë©´ Â‰æ±‚æ±‚.
 
 
-Âü°í·Î, <strong>1ÆÇ~4ÆÇ¿¡¼­ ºÎ¼ö¸¦ ¹ÝÀ¸·Î ÁÙÀÌ°í ÆÇ¼ö¸¦ 1°³ ´Ã¸®¸é Á¡¼ö°¡ °°½À´Ï´Ù.</strong>
+ì°¸ê³ ë¡œ, <strong>1íŒ~4íŒì—ì„œ ë¶€ìˆ˜ë¥¼ ë°˜ìœ¼ë¡œ ì¤„ì´ê³  íŒìˆ˜ë¥¼ 1ê°œ ëŠ˜ë¦¬ë©´ ì ìˆ˜ê°€ ê°™ìŠµë‹ˆë‹¤.</strong>
 
-ex) 2ÆÇ 40ºÎ¿Í 3ÆÇ 20ºÎ°¡ 2600Á¡À¸·Î °°½À´Ï´Ù.
+ex) 2íŒ 40ë¶€ì™€ 3íŒ 20ë¶€ê°€ 2600ì ìœ¼ë¡œ ê°™ìŠµë‹ˆë‹¤.
 
-ÀÌ¸¦ ÀÌ¿ëÇÏ¿©, Ä¡¶ÇÀÌ´Â 25ºÎÀÎµ¥ ÆÇ¼ö¸¦ ÇÏ³ª ÁÙÀÌ°í 50ºÎ¸¦ ºÁ¼­ °è»êÇÏ¸é ‰Ï´Ï´Ù.
+ì´ë¥¼ ì´ìš©í•˜ì—¬, ì¹˜ë˜ì´ëŠ” 25ë¶€ì¸ë° íŒìˆ˜ë¥¼ í•˜ë‚˜ ì¤„ì´ê³  50ë¶€ë¥¼ ë´ì„œ ê³„ì‚°í•˜ë©´ Â‰æ±‚æ±‚.
 
-ex) Ä¡¶ÇÀÌ µµ¶óµµ¶ó 4ÆÇ 25ºÎ°¡ 3ÆÇ 50ºÎÀÇ Á¡¼ö¿Í °°À¸´Ï 6400Á¡ÀÔ´Ï´Ù.
+ex) ì¹˜ë˜ì´ ë„ë¼ë„ë¼ 4íŒ 25ë¶€ê°€ 3íŒ 50ë¶€ì˜ ì ìˆ˜ì™€ ê°™ìœ¼ë‹ˆ 6400ì ìž…ë‹ˆë‹¤.
 </pre>
 
-<!-- ÄÁÅÙÃ÷ ¸¶Áö¸·ÀÔ´Ï´Ù. -->
+<!-- ì»¨í…ì¸  ë§ˆì§€ë§‰ìž…ë‹ˆë‹¤. -->
 
 
 <pre id="footer">
-¸¶ÀÛ±×¸² src : "http://tenhou.net/2/"
+ë§ˆìž‘ê·¸ë¦¼ src : "http://tenhou.net/2/"
 BGM src : "https://youtu.be/Mg1M5_V5v_8"
-¢Ï : 010-2781-8889
+â˜Ž : 010-2781-8889
 email : insg1993@naver.com
 </pre>
 
