@@ -1,0 +1,68 @@
+#imgnotice {
+	margin-top : 15px;
+	position:relative;
+	left:17%;
+}
+
+#page1 {
+	position:relative;
+	left:17%;
+	border: 1px solid black;
+}
+
+#page2 {
+	position:relative;
+	left:17%;
+	border: 1px solid black;
+}
+
+#page3 {
+	position:relative;
+	left:17%;
+	border: 1px solid black;
+}
+
+img:hover{
+	opacity: 0.65;
+}
+
+
+strong {
+display:block;
+position:relative;
+left:-2%;
+top:0px;
+font-size:20px;
+}
+
+span {
+	width : 290px;
+	text-align: center;
+	font-size:12px;
+}
+
+#tenhou {
+	float: left;
+	display: inline;
+	position:relative;
+	left:17.5%;
+	top:5px;
+}
+
+#rubix {
+	float: left;
+	display: inline;
+	position:relative;
+	left:17.5%;
+	top:5px;
+}
+
+#rich {
+	float: left;
+	display: inline;
+	position:relative;
+	left:105%;
+	top:-90px;
+}
+
+

@@ -1,0 +1,34 @@
+#goto {
+	margin :30px 0px 40px 20%;
+	width : 600px;
+	padding: 0px 10px 3px 10px;
+	border-bottom : 1px solid black;
+}
+
+.topic {
+	position : relative;
+	left : 17%;
+	margin-bottom:10px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+img {
+	margin-left: 17%;
+	border: 1px solid black;
+}
+
+table {
+	background-color:#EEEEEE;
+	margin-left: 17%;
+	text-align:center;
+	width: 450px;
+}
+
+#table5 {
+	width: 600px;
+}
+
+table .col {
+	background-color:#55FFFF;
+}

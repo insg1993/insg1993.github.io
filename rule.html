@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mdic's Classic BoardGame</title>
+	<link type="text/css" rel="stylesheet" href="base.css">
+	<!-- 모든 html은 base.css를 전제로 두고 있습니다.-->
+
+	<link type="text/css" rel="stylesheet" href="rule.css">
+	
+</head>
+<body>
+<div id="backbox"></div>
+</a id="top">
+<!-- "Top"버튼을 이용하여 맨 위로 jump하기위한 id입니다.-->
+
+<audio id="backmusic" src="backmusic.mp3"" controls loop>
+Your browser does not support the audio element.
+</audio>
+<!-- background music입니다. BGM으로는
+PLvsAA OST - 1-13 - Barroom 을 사용하였으며,
+"https://youtu.be/Mg1M5_V5v_8"에서 가져왔습니다.-->
+
+
+<header>
+<a id="mdic" href="main.html"><div id="divmdic">Mdic's Mahjong</div></a>
+<a id="home" href="main.html"><div id="symbol"></div></a>
+
+<div id="menubar">
+	<ul class="menu">
+		<li><a href="intro.html">마작소개</a></li>
+		<li><a href="rule.html" id="here">규칙</a></li>
+		<li><a href="history.html">패보</a></li>
+		<li><a href="link.html">링크</a></li>
+	</ul>
+</div>
+</header>
+
+<!-- 메뉴바입니다. -->
+
+<!-- 컨텐츠 시작입니다. -->
+
+<div id="goto">
+goto...
+	<ul class="menu">
+		<li><a href="#kinds">마작패종류</a></li>
+		<li><a href="#make">조패</a></li>
+		<li><a href="#cry">후로</a></li>
+		<li><a href="#rank">역</a></li>
+		<li><a href="#add">부수</a></li>
+		<li><a href="#cal">점수계산법</a></li>
+			
+	</ul>
+</div>
+
+<pre class="explain">
+지금 설명하는 룰은 일본마작인 <strong>'리치마작'</strong>을 기준으로 하고 있습니다.
+</pre>
+
+<div id="#kinds" class="topic">&lt;마작패 종류&gt;</div>
+
+<img src="kinds.jpg" alt="마작패종류">
+
+<pre class="explain">
+마작패는 위와 같이 이루어져 있습니다.
+
+첫줄에 숫자가 한자로 써져있는 빨간 패들이 <strong>'만수패'</strong> 입니다.
+1부터 9까지 있으며 각 패마다 4개씩 들어있습니다. (총 36개)
+
+둘째줄에 파란 동그라미가 그려진 패들이 <strong>'통수패'</strong> 입니다.
+통수패 또한 1부터 9까지 있으며 각 패마다 4개씩 들어있습니다. (총 36개)
+
+셋째줄에 초록 대나무들로 이루어진 패들이 <strong>'삭수패'</strong> 입니다.
+삭수패 역시 1부터 9까지 있으며 각 패마다 4개씩 들어있습니다. (총 36개)
+
+숫자들을 의미하는 만수패, 통수패, 삭수패. 이들을 통틀어서 <strong>'수패'</strong>라고 합니다.(총 108개)
+
+넷째줄에는 글자패들이라 하여 <strong>'자패'</strong> 라고 합니다.
+자패는 동서남북 4방위를 나타내는 <strong>'풍패'</strong>와(바람패라고도 합니다.)
+나머지 백발중을 나타내는 <strong>'삼원패'</strong>로 이루어져 있습니다.
+총 7가지 종류가 있으며, 각 종류마다 4개씩 총 28개가 있습니다.
+
+즉...
+<strong>
+마작패 = 수패 + 자패
+수패 = 만수패 + 통수패 + 삭수패
+자패 = 풍패 + 삼원패
+</strong>
+라고 정리할 수 있습니다.
+
+참고) 5번째줄의 빨간 5들은 '아카도라'라고 하여, 넣을때도 있고 안넣을 때도 있습니다.
+넣게돼면 보통 5를 하나 빼고 빨간 5를 집어넣습니다.
+그 오른쪽에 꽃모양패 4개는 화패라고 하나, 리치마작에선 사용하지 않습니다.
+
+
+
+</pre>
+
+<div id="#make" class="topic">&lt;조패&gt;</div>
+
+<pre class="explain">
+마작을 처음 시작할 때 패를 <strong>13개</strong>를 가지고 시작합니다.
+
+자신의 차례가 됐을 때 패 한개를 가져옵니다. 이로써 패가 14개가 됍니다.
+
+하지만 패의 갯수를 다시 맞추기 위해 불필요한 패를 1개 버리고 13개를 맞춥니다.
+
+이러한 상황을 반복하여, <strong>"몸통 4개에 머리 1개"</strong>를 만들면 이기는 게임입니다.
+
+
+<strong>몸통</strong>은 <strong>슌츠</strong> 혹은 <strong>커쯔</strong>로 만들어집니다.
+
+<strong>슌츠</strong>는 연속된 숫자 3개의 패를 의미합니다. 다음과 같습니다.
+</pre>
+
+<img src="run.png" alt="슌츠 올바른 예시">
+
+<pre class="explain">
+이와같이 연속된 숫자 3개면 슌츠를 만족합니다. 하지만 밑의 예시는 슌츠가 아닙니다.
+</pre>
+
+<img src="xrun.png" alt="슌츠 옳지않은 예시">
+
+<pre class="explain">
+9와 1은 연결되지 않습니다. 891은 슌츠로 인정하지 않습니다.
+
+147이나 468처럼 2~3칸 일정한 간격으로 떨어져있다고 해서 슌츠라고 인정하지 않습니다.
+
+풍패순서, 혹은 삼원패 순서에 따라 동남서를 나열한다고 해도 슌츠라 하지 않습니다.
+
+애당초 자패로는 슌츠를 만들 수 없습니다.
+
+맨 마지막 그림처럼 여러 종류의 수패를 섞으면 안됍니다.
+
+
+<strong>커쯔</strong>는 똑같은 패 3개(혹은 4개)를 만들면 만족합니다.
+</pre>
+
+<img src="set.png" alt="커쯔 올바른 예시">
+
+<pre class="explain">
+맨 밑의 3통 4개의 경우 '깡즈'라고 부르는데, 일단은 커쯔와 같다고 생각하셔도 무방합니다.
+
+
+<strong>머리</strong>는 커쯔와 비슷하게 똑같은 패 2개를 만들면 만족합니다.
+
+
+그래서 <strong>몸통 4개와 머리 하나</strong>를 만들어 가면 됍니다. 예시로 다음과 같은 패가 있습니다.
+</pre>
+
+<img src="win.png" alt="완성패">
+
+<pre class="explain">
+위와 같은 형태를 만들면 <strong>'화료'</strong> 했다고 하며 해당 판을 이기게 됍니다.
+
+
+</pre>
+
+<div id="#cry" class="topic">&lt;후로&gt;</div>
+
+<pre class="explain">
+마작은 패를 서로 한번씩 시계방향으로 한장 가져오고 버리면서 진행합니다.
+
+이때 <strong>자신에게 필요해 보이는 패를 상대방이 버렸을때, 이를 가져오는 행위</strong>를 <strong>'후로'</strong>라고 합니다.
+
+물론 마구잡이로 가져올 수 없고, 특정 규칙에 따라서만 가져올 수 있습니다.
+
+
+<strong>'후로'</strong>에는 <strong>'치'</strong>, <strong>'퐁'</strong>, <strong>'깡'</strong>이 있습니다.
+
+
+<strong>'치'</strong>는 내 왼쪽사람(상가)이 슌츠를 완성시킬 수 있는 패를 냈을 때 <strong>'치'</strong>라고 발성하고 가져올 수 있습니다.
+
+발성 후, 슌츠를 완성시킬 나머지 패 2개를 자신의 손에서 공개한 뒤,
+
+상가가 버린 패 한개를 가져와 자신의 우측으로 따로 빼둡니다.
+
+그리고 자신의 패 중 1개를 버리면 됍니다.
+
+
+예를들어, 자신이 2,4삭을 가지고 있는데 상가가 3삭을 냈으면...
+</pre>
+
+<img src="chii.png" alt="치">
+
+<pre class="explain">
+'치' 발성 후 다음과 같이 우측에 공개하면 됍니다.
+
+받아간 패(3삭)를 받아간 쪽 방향(왼쪽)으로 눕혀서 표시해야 합니다. 
+
+
+<strong>'퐁'</strong>은 아무나 커쯔를 완성시킬 수 있는 패를 냈을 때 <strong>'퐁'</strong>라고 발성하고 가져올 수 있습니다.
+
+치와 마찬가지로 발성 후 패 2개를 공개, 우측에 따로빼고 타패하면 됍니다.
+
+예를들어, 발(發) 2장을 들고 있는데 맞은편 사람(대가)이 발을 냈을 때
+
+'퐁'이라고 발성 후 패를 다음과 같이 놓고 타패하시면 됍니다.
+</pre>
+
+<img src="pong.png" alt="퐁">
+
+<pre class="explain">
+
+<strong>'깡'</strong>은 위에서 잠깐 '깡즈'에 대해 설명했었는데, 이를 만들기 위한 발성입니다.
+
+깡에는 <strong>'암깡'</strong>, <strong>'가깡'</strong>, <strong>'밍깡'</strong> 3종류가 있습니다.
+
+
+<strong>'암깡'</strong>은 자신의 차례때 <strong>같은 패 4개를 공개</strong>하면서 '깡'을 선언합니다.
+
+그리고 우측에 다음과 같이 놓습니다.
+</pre>
+
+<img src="blindkang.png" alt="암깡">
+
+<pre class="explain">
+<strong>'가깡'</strong>은 자신의 차례때 <strong>자신의 손패에 이미 퐁 해놓은 패의 마지막 한장이 더 있을 때</strong> 하는 '깡'입니다.
+
+발성 후, 눕혀놓은 패 위에 다음과 같이 겹쳐놓으시면 됍니다.
+</pre>
+
+<img src="addkang.png" alt="가깡">
+
+<pre class="explain">
+
+<strong>'밍깡'</strong>(대명깡이라고도 합니다)은 커쯔(같은 패 3장)을 들고 있는 상태에서
+
+<strong>상대방이 자신의 '깡즈'를 완성시킬 수 있는 마지막 패 한장을 냈을 때</strong> 하는 '깡'입니다.
+
+다음과같이 가져온 쪽으로 눕혀서 표시하시면 됍니다.
+</pre>
+
+<img src="mingkang.png" alt="밍깡">
+
+
+<pre class="explain">
+이때, 원래 몸통의 갯수는 3개인데, <strong>깡을 할 경우 4개가 돼어 패가 하나 모자르게 됍니다.</strong>
+
+그래서 깡을 한 후에, <strong>영상에서 보충패를 하나 가져옵니다.</strong> 그후 패 하나를 버리시면 됍니다.
+
+</pre>
+
+<div id="#rank" class="topic">&lt;역&gt;</div>
+
+<pre class="explain">
+마작에는 <strong>'역'</strong>이란게 존재합니다.
+
+<strong>'역'은 자신의 완성패가 얼마나 값어치가 있는지 기준점 역할을 합니다.</strong>
+
+역이 많으면 많을수록 받을 점수는 올라갈 것이며, 별로 없으면 그만큼 적은 점수밖에 받지 못합니다.
+
+그리고, 완성 형태를 만들었다고 해서 <strong>'역'이 없으면 '화료'를 할 수 없습니다.</strong>
+
+그만큼 '역'이 중요한 것이니 많긴 하더라도 꼭 외워둬야 할 사항입니다.
+
+
+마작 역은 상당히 많은 편이니 링크만 걸고 넘어가겠습니다.
+<a href="https://namu.wiki/w/%EB%A7%88%EC%9E%91%EC%9D%98%20%EC%97%AD">링크(역)</a>
+
+</pre> 
+
+<div id="#add" class="topic">&lt;부수&gt;</div>
+
+<pre class="explain">
+초보자 분들께선 지금 당장 아실필요는 없는 내용입니다. 우선 '역'을 다 외우시는게 먼저입니다.
+
+그리고 자신이 만든 패가 무슨 역을 가지고 있는지 말할 수 있을 정도가 되고 점차 익숙해지시면
+
+부수에 대해 읽으셔도 됩니다.
+
+
+<strong>부수</strong>는 <strong>점수를 정확히 계산하기 위해 필요한 사항</strong>입니다.
+
+대략적으로, 패를 만들기 어려운 정도만큼 부수가 올라갑니다.
+
+모든 패는 기본적으로 20부를 가지고 있으며, 멘젠론일 경우 30부부터 시작합니다.
+
+그리고 <strong>총 4가지 요소에 따라 부수를 추가</strong>합니다.
+
+마지막으로 <strong>10의자리로 '올림'</strong>을 하면 최종 부수가 됩니다. (ex. 계산 끝에 32부가 나왔다면 올림하여 40부가 됍니다.)
+
+예외적으로 <strong>'치또이' 역은 무조건 25부</strong>입니다.
+
+
+첫째로, <strong>'쯔모부수'</strong>입니다.(자신이 패를 직접 가져와서 화료한 경우)
+
+상대방에게 론을 선언하여 화료한 경우 이 요소에서 얻는 부수는 0부입니다.
+
+하지만 '쯔모'로 화료한 경우 '쯔모부수' 2부를 얻을 수 있습니다.
+
+예외적으로, 영상개화 화료의 경우 쯔모부수가 붙지 않습니다. (부수대신 영상개화라는 1판역이 추가되는 샘)
+</pre>
+
+<table border="1">
+	<caption><strong>쯔모부수</strong></caption>
+	<tr class="col">
+		<td></td>
+		<td>부수</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>론</td>
+		<td>0</td>
+	</tr>
+</table>
+
+<pre class="explain">
+
+둘째로, <strong>'커쯔부수'</strong>입니다.
+
+커쯔/깡즈 의 갯수와 형태에 따라 붙는 부수가 다릅니다.
+
+부수는 다음과 같습니다.
+</pre>
+
+<table border="1">
+	<caption><strong>커쯔부수</strong></caption>
+	<tr class="col">
+		<td></td>
+		<td>중장패</td>
+		<td>귀족패</td>
+	</tr>
+	<tr>
+		<td>밍커</td>
+		<td>2</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>안커</td>
+		<td>4</td>
+		<td>8</td>
+	</tr>
+	<tr>
+		<td>밍깡</td>
+		<td>8</td>
+		<td>16</td>
+	</tr>
+	<tr>
+		<td>암깡</td>
+		<td>16</td>
+		<td>32</td>
+	</tr>
+
+</table>
+
+
+
+<pre class="explain">
+여기서 귀족패는 '1, 9 자패'를 말하며, 중장패는 '2~8까지 수패'를 뜻합니다.
+
+
+셋째로, <strong>'대기부수'</strong>입니다.
+
+마작에서 대기형태로는 기본적으로 <strong>5가지</strong>가 있습니다. (예외로 국사무쌍13면팅이 있지요.)
+
+<strong>'양면대기'</strong>(23삭을 들고 14삭을 기다리는 경우)는 부수가 붙지 않습니다. (0부)
+
+<strong>'간짱대기'</strong>(24삭을 지니고 3삭을 기다리는 경우, 칸대기)는 2부가 추가됩니다.
+
+<strong>'변짱대기'</strong>(24삭을 지니고 3삭을 기다리는 경우, 펜대기)는 2부가 추가됩니다.
+
+<strong>'단기대기'</strong>(머리가 없어서 1통 하나 들고 다른1통을 기다리는 경우)는 2부가 추가됩니다.
+
+<strong>'샤보대기'</strong>(1통2개 2통2개에서 1,2통을 기다리는 경우)는 부수가 붙지 않습니다.
+(이미 커쯔에서 부수가 붙기 때문에 따로 부수를 쳐주지 않는 것이지요.)
+</pre> 
+
+<table border="1">
+	<caption><strong>대기부수</strong></caption>
+	<tr class="col">
+		<td>대기형태</td>
+		<td>부수</td>
+	</tr>
+	<tr>
+		<td>양면</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>샤보</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>간짱</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>변짱</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>단기</td>
+		<td>2</td>
+	</tr>
+</table>
+
+<pre class="explain">
+만약에 여러가지 대기로 볼 수 있는 형태라면 '고득점'이 되는 방향으로 해석하시면 됩니다.
+
+
+
+마지막으로 <strong>'머리부수'</strong>입니다.
+
+머리가 만약 안커가 됐을 때 역이 붙는 경우, 부수가 추가됍니다.
+
+부수는 다음과 같습니다. (연풍패는 동장에 동가일 때 동패를, 남장에 남가일때 남패를 뜻합니다.)
+</pre>
+<table border="1">
+	<caption><strong>머리부수</strong></caption>
+	<tr class="col">
+		<td>머리형태</td>
+		<td>부수</td>
+	</tr>
+	<tr>
+		<td>연풍패</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>자풍패</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>판풍패</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>삼원패</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>타풍패</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>수패</td>
+		<td>0</td>
+	</tr>
+</table>
+
+<pre class="explain">
+
+이 4가지 요소를 고려해서 부수를 계산하시면 됍니다.
+
+예시로 3가지만 들자면...
+</pre>
+
+<img src="busuex.png" alt="부수예제">
+
+<pre class="explain">
+
+<strong>첫번째는</strong> 기본20부 + 쯔모부수2부 + 중장패암깡16부 + 귀족패밍깡16부 + 간짱대기2부 + 연풍패머리4부 = 60부
+
+<strong>올림해도 60부입니다.</strong>
+
+<strong>두번째는</strong> 기본20부 + 쯔모부수2부 + 귀족패안커8부 + 단기대기2부 = 32부
+
+<strong>올림하여 40부입니다.</strong>
+
+물론 78삭 양면대기로 볼 수도 있겠지만, 9삭단기로도 볼 수 있기에, 고득점으로 해석합니다.
+
+<strong>세번째는</strong> 멘젠론30부 + 귀족패안커 8부 + 단기대기2부 + 삼원패머리2부 = 42부
+
+<strong>올림하여 50부입니다.</strong>
+
+</pre>
+
+<div id="#cal" class="topic">&lt;점수계산법&gt;</div>
+
+<pre class="explain">
+
+위에서 구했던 역과 부수를 토대로 패의 점수를 매깁니다.
+
+점수는 다음과 같습니다.
+</pre>
+
+<table border="1">
+	<caption><strong>자 점수환산표(1~4판)</strong></caption>
+	<tr class="col">
+		<td rowspan="2">부수</td>
+		<td></td>
+		<td colspan="2">1판</td>
+		<td colspan="2">2판</td>
+		<td colspan="2">3판</td>
+		<td colspan="2">4판</td>
+	</tr>
+	<tr class="col">
+		<td></td>
+		<td>친</td>
+		<td>자</td>
+		<td>친</td>
+		<td>자</td>
+		<td>친</td>
+		<td>자</td>
+		<td>친</td>
+		<td>자</td>
+	</tr>
+	<tr>
+		<td rowspan="2">20부</td>
+		<td>론</td>
+		<td colspan="2">-</td>
+		<td colspan="2">-</td>
+		<td colspan="2">-</td>
+		<td colspan="2">-</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td colspan="2">-</td>
+		<td>700</td>
+		<td>400</td>
+		<td>1300</td>
+		<td>700</td>
+		<td>2600</td>
+		<td>1300</td>
+	</tr>
+	<tr>
+		<td rowspan="2">30부</td>
+		<td>론</td>
+		<td colspan="2">1000</td>
+		<td colspan="2">2000</td>
+		<td colspan="2">3900</td>
+		<td colspan="2">7700</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>500</td>
+		<td>300</td>
+		<td>1000</td>
+		<td>500</td>
+		<td>2000</td>
+		<td>1000</td>
+		<td>3900</td>
+		<td>2000</td>
+	</tr>
+	<tr>
+		<td rowspan="2">40부</td>
+		<td>론</td>
+		<td colspan="2">1300</td>
+		<td colspan="2">2600</td>
+		<td colspan="2">5200</td>
+		<td colspan="2" rowspan="8">만관</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>700</td>
+		<td>400</td>
+		<td>1300</td>
+		<td>700</td>
+		<td>2600</td>
+		<td>1300</td>
+	</tr>
+	<tr>
+		<td rowspan="2">50부</td>
+		<td>론</td>
+		<td colspan="2">1600</td>
+		<td colspan="2">3200</td>
+		<td colspan="2">6400</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>800</td>
+		<td>400</td>
+		<td>1600</td>
+		<td>800</td>
+		<td>3200</td>
+		<td>1600</td>
+	</tr>
+	<tr>
+		<td rowspan="2">60부</td>
+		<td>론</td>
+		<td colspan="2">2000</td>
+		<td colspan="2">3900</td>
+		<td colspan="2">7700</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>1000</td>
+		<td>500</td>
+		<td>2000</td>
+		<td>1000</td>
+		<td>3900</td>
+		<td>2000</td>
+	</tr>
+	<tr>
+		<td rowspan="2">70부</td>
+		<td>론</td>
+		<td colspan="2">2300</td>
+		<td colspan="2">4500</td>
+		<td colspan="2" rowspan="2">만관</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>1200</td>
+		<td>600</td>
+		<td>2300</td>
+		<td>1200</td>
+	</tr>
+</table>
+
+<br/>
+
+
+<table border="1">
+	<caption><strong>친 점수환산표(1~4판)</strong></caption>
+	<tr class="col">
+		<td>부수</td>
+		<td></td>
+		<td>1판</td>
+		<td>2판</td>
+		<td>3판</td>
+		<td>4판</td>
+	</tr>
+	<tr>
+		<td rowspan="2">20부</td>
+		<td>론</td>
+		<td>-</td>
+		<td>-</td>
+		<td></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>-</td>
+		<td>700</td>
+		<td>1300</td>
+		<td>2600</td>
+	</tr>
+	<tr>
+		<td rowspan="2">30부</td>
+		<td>론</td>
+		<td>1500</td>
+		<td>2900</td>
+		<td>5800</td>
+		<td>11600</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>500</td>
+		<td>1000</td>
+		<td>2000</td>
+		<td>3900</td>
+	</tr>
+	<tr>
+		<td rowspan="2">40부</td>
+		<td>론</td>
+		<td>2000</td>
+		<td>3900</td>
+		<td>7700</td>
+		<td rowspan="8">만관</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>700</td>
+		<td>1300</td>
+		<td>2600</td>
+	</tr>
+	<tr>
+		<td rowspan="2">50부</td>
+		<td>론</td>
+		<td>2400</td>
+		<td>4800</td>
+		<td>9600</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>800</td>
+		<td>1600</td>
+		<td>3200</td>
+	</tr>
+	<tr>
+		<td rowspan="2">60부</td>
+		<td>론</td>
+		<td>2900</td>
+		<td>5800</td>
+		<td>11600</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>1000</td>
+		<td>2000</td>
+		<td>3900</td>
+	</tr>
+	<tr>
+		<td rowspan="2">70부</td>
+		<td>론</td>
+		<td >3400</td>
+		<td >6800</td>
+		<td rowspan="2">만관</td>
+	</tr>
+	<tr>
+		<td>쯔모</td>
+		<td>1200</td>
+		<td>2300</td>
+	</tr>
+</table>
+
+<br/>
+
+
+<table id="table5" border="1">
+	<caption><strong>점수환산표(5판 이상)</strong></caption>
+	<tr class="col">
+		<td>화료한<br/>사람</td>
+		<td></td>
+		<td>지불할<br/>사람</td>
+		<td>만관<br/>(5판)</td>
+		<td>하네만<br/>(6~7판)</td>
+		<td>배만<br/>(8~10판)</td>
+		<td>삼배만<br/>(11~12판)</td>
+		<td>역만<br/>(13판이상)</td>
+	</tr>
+	<tr>
+		<td rowspan="3">자</td>
+		<td colspan="2">론</td>
+		<td>8000</td>
+		<td>12000</td>
+		<td>16000</td>
+		<td>24000</td>
+		<td>36000</td>
+	</tr>
+	<tr>
+		<td rowspan="2">쯔모</td>
+		<td>자</td>
+		<td>2000</td>
+		<td>3000</td>
+		<td>4000</td>
+		<td>6000</td>
+		<td>8000</td>
+	</tr>
+	<tr>
+		<td>친</td>
+		<td>4000</td>
+		<td>6000</td>
+		<td>8000</td>
+		<td>12000</td>
+		<td>16000</td>
+	</tr>
+	<tr>
+		<td rowspan="2">친</td>
+		<td colspan="2">론</td>
+		<td>12000</td>
+		<td>18000</td>
+		<td>24000</td>
+		<td>36000</td>
+		<td>48000</td>
+	</tr>
+	<tr>
+		<td colspan="2">쯔모</td>
+		<td>4000</td>
+		<td>6000</td>
+		<td>8000</td>
+		<td>12000</td>
+		<td>16000</td>
+	</tr>
+</table>
+
+
+
+<pre class="explain">
+
+예를 여러개 들자면...
+
+'자'가 리치 쯔모 핑후 도라 4판 20부 패라고 한다면 친은 2600, 자는 1300냅니다.
+
+자가 중 혼일의 3판 30부로 론을 선언했다면 3900을 얻어갑니다.
+
+친이 9판으로 론을 선언했다면 24000점입니다.
+
+등등... 표를 이용하여 점수를 선언하시면 됍니다.
+
+
+참고로, <strong>1판~4판에서 부수를 반으로 줄이고 판수를 1개 늘리면 점수가 같습니다.</strong>
+
+ex) 2판 40부와 3판 20부가 2600점으로 같습니다.
+
+이를 이용하여, 치또이는 25부인데 판수를 하나 줄이고 50부를 봐서 계산하면 됍니다.
+
+ex) 치또이 도라도라 4판 25부가 3판 50부의 점수와 같으니 6400점입니다.
+</pre>
+
+<!-- 컨텐츠 마지막입니다. -->
+
+
+<pre id="footer">
+마작그림 src : "http://tenhou.net/2/"
+BGM src : "https://youtu.be/Mg1M5_V5v_8"
+☎ : 010-2781-8889
+email : insg1993@naver.com
+</pre>
+
+<a href="#top" id="topbutton">Top</a>
+
+<
+
+</body>
+</html>

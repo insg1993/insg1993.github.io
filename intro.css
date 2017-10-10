@@ -1,0 +1,13 @@
+#lego {
+	border: 1px solid black;
+	position:relative;
+	margin : 50px 0px 50px 32%;
+}
+
+#mahjong {
+	border: 1px solid black;
+	position:relative;
+	margin : 50px -100px 50px 17%;
+	width : 480px;
+	height: 320px;
+}
